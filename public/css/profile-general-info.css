@@ -1,0 +1,301 @@
+.profile-general-info {
+    width: 95%;
+    margin: auto;
+}
+
+.profile-general-info-photo {
+
+}
+
+.profile-general-info-img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-general-info-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-general-info-img-process {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.profile-general-info-photo-conatiner {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-general-info-img-process-h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: -0.45px;
+    color: rgb(0, 20, 51);
+    margin: 0;
+}
+
+.profile-general-info-img-process-size {
+    color: #808ea5;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 8px;
+}
+
+.profile-general-info-img-process-buttons {
+
+}
+
+.profile-general-info-img-process-buttons .change {
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 85, 217);
+}
+
+.profile-general-info-img-process-buttons .change:hover {
+    background-color: rgb(0, 70, 178);
+}
+
+
+.profile-general-info-img-process-buttons .edit,
+.profile-general-info-img-process-buttons .delete {
+    color: #0055d9;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 12px;
+    background-color: transparent;
+    border: none;
+}
+
+
+/* Start immediate hiring */
+
+.immediate-hiring {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.immediate-hiring-title {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+}
+
+.immediate-hiring-p {
+
+}
+
+
+
+/* End immediate hiring */
+
+.input-background {
+    background-color: rgb(250, 250, 251);
+}
+
+/* Start Your Personal Info */
+
+.your-personal-info {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+}
+
+.your-personal-info-h3 {
+    margin: 0 0 1rem;
+}
+
+.your-personal-info-name {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.your-personal-info-personal {
+    width: 100%;
+}
+
+.your-personal-info-personal label {
+    color: rgb(51, 75, 111);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.your-personal-info-personal input {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    color: rgb(0, 20, 51);
+    background-color: rgb(250, 250, 251);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px 12px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+}
+
+.your-personal-info-birthdate {
+    margin-top: 1rem;
+}
+
+.your-personal-info-birthdate h4 {
+
+}
+
+.your-personal-info-birthdate-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.your-personal-info-birthdate select {
+    width: 100px;
+    height: 45px;
+    border: 1px solid #ccc;
+}
+
+.gender {
+
+}
+
+.gender h4 {
+
+}
+
+.gender-container {
+    display: flex;
+}
+
+.gender-type {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.gender-type input {
+
+}
+
+.gender-type p {
+
+}
+
+.nationality {
+
+}
+
+.nationality h4 {
+
+}
+
+.nationality select {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* End Your Personal Info */
+
+/* Start Your Loaction */
+
+.your-location {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+}
+
+.your-location h4 {
+    margin: 0 0 1rem;
+}
+
+.input-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-select label {
+
+}
+
+.input-select input {
+    width: 440px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+/* End Your Loaction */
+
+/* Start Your Contact Info */
+
+.your-contact-info {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+}
+
+.your-contact-info h4 {
+    margin: 0 0 1rem;
+}
+
+.your-contact-info h4 span {
+    font-weight: normal;
+    margin: 0px 5px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.profile-general-info-button {
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    margin: 1rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 85, 217);
+}
+
+/* End Your Contact Info */

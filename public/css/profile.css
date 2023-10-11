@@ -1,0 +1,364 @@
+.profile {
+    width: 90%;
+    height: 700px;
+    margin: 5rem auto;
+}
+
+/* Start User Data */
+
+.user-data {
+    width: 65%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+}
+
+.user-data-about {
+    display: flex;
+    gap: 2rem;
+}
+
+.user-data-img {
+    width: 120px;
+    height: 120px;
+}
+
+.user-data-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-data-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.user-data-info-container {
+    background: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    padding: 1rem;
+}
+
+.user-data-info-username {
+    
+}
+
+.user-data-info-field {
+
+}
+
+.user-data-info-location {
+
+}
+
+.user-data-info-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.user-data-info-contact-info-h3 {
+    margin: 0;
+}
+
+.user-data-info-contact-info-icon-p {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.user-data-info-contact-info-icon-p p {
+    
+}
+
+    /* General Info: */
+
+    .user-data-info-general-info {
+
+    }
+
+    .user-data-info-general-info-title-value {
+        display: flex;
+        color: rgb(0, 20, 51);
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        margin-top: 16px;
+    }
+
+    .user-data-info-general-info-title-value .title {
+        width: 200px;
+    }
+
+    .user-data-info-general-info-title-value .value {
+
+    }
+
+
+    /* Career Interests: */
+
+    .user-data-info-career-interests {
+
+    }
+
+    .user-data-info-career-interests-h3 {
+
+    }
+
+    .user-data-info-career-interests-keywords {
+
+    }
+
+    .user-data-info-career-interests-keywords .title {
+        font-size: 20px;
+        margin-bottom: 0.5rem;    
+    }
+
+    .user-data-info-career-interests-keywords .value {
+
+    }
+
+    
+/* End User Data */
+
+/* Start Skills and tools: */
+
+.user-skills {
+    width: 65%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+}
+
+.user-skills-h3 {
+    margin: 0 0 1rem;
+}
+
+.user-skills-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.user-sklls-skill {
+    width: fit-content;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgb(235, 237, 240);
+}
+
+.user-sklls-skill p {
+    
+}
+
+/* End Skills and tools: */
+
+/* Start Work Experience */
+
+.work-experiences {
+    width: 65%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+}
+
+.work-experiences-h3 {
+    margin: 0 0 1rem;
+}
+
+.work-experiences-experience {
+    display: flex;
+    gap: 1rem;
+}
+
+.work-experiences-experience-img {
+    width: 60px;
+    border: 0.2px solid rgb(151, 151, 151);
+}
+
+.work-experiences-experience-img img {
+    width: 100%;
+}
+
+.work-experiences-experience-about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.experience-title {
+
+}
+
+.experience-title span {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+    white-space: nowrap;
+}
+
+.experience-type {
+
+}
+
+.experience-data {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+    margin: 0px;
+}
+
+
+
+/* End Work Experience */
+
+/* Start Work Education */
+
+.education {
+    width: 65%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 1rem;
+}
+
+.education-h3 {
+    margin: 0 0 1rem;
+}
+
+.education-about {
+
+}
+
+.education-field {
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+}
+
+.education-location {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+}
+
+.education-graduation {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgb(77, 97, 130);
+}
+
+/* End Work Education */
+
+
+.profile-data {
+    width: 90%;
+    height: 300px;
+    margin: 5rem auto;
+    background-color: #1313cf7d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-personal-data {
+
+}
+
+.profile-personal-data p {
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+}
+
+.profile-img {
+    width: 180px;
+}
+
+.profile-img img {
+    width: 100%;
+}
+
+/* CV */
+
+.profile-cv {
+    text-align: center;
+}
+
+.profile-cv-data {
+
+}
+
+.profile-cv-data p {
+
+}
+
+.profile-to-cv {
+
+}
+
+.profile-cv-create {
+    width: 40%;
+    height: 550px;
+    margin: auto;
+    background-color: #aab6c5bf;
+}
+
+.profile-cv-create form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-cv-create form label {
+    font-size: 30px;
+}
+
+.profile-cv-create form input[type=text] {
+    width: 65%;
+    height: 25px;
+    border-radius: 20px;
+    border: solid 1px #005aff;
+}
+
+.profile-cv-create form input[type=submit] {
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    background-color: #0066ff;
+    border: none;
+    color: white;
+}
+
+/* Company */
+
+.profile-title {
+    text-align: center;
+    font-size: 35px;
+}

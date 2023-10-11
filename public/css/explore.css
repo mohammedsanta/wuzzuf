@@ -1,0 +1,98 @@
+
+
+/* jobs */
+
+.add-job {
+    text-align: center;
+    margin: 3rem;
+    font-size: 30px;
+}
+
+.add-job a {
+    text-decoration: none;
+    color: white;
+    background-color: #1d1dd3;
+    padding: 0.1rem 1rem;
+    border-radius: 20px;
+}
+
+.explor {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.explor h2 {
+
+}
+
+.explor-jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.explor-box {
+    width: 65%;
+    background-color: white;
+    padding: 1.3rem;
+    border: 1px solid rgb(217, 221, 228);
+}
+
+.explor-jobs-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.explor-jobs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explor-jobs-box-right {
+
+}
+
+.jobs-box-about {
+
+}
+
+.jobs-box-about-title {
+    margin: 0;
+    font-size: 20px;
+    color: #1d1dd3;
+}
+
+.jobs-box-about-company-city {
+    margin: 12px 0 0 0;
+    font-size: 13px;
+}
+
+.explor-jobs-box-job-tags {
+
+}
+
+.explor-jobs-box-job-tags p {
+    font-size: 12px;
+    width: 80%;
+}
+
+.explor-jobs-box-img {
+    /* width: 100%; */
+}
+
+.explor-jobs-box-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.explor-jobs-share {
+    display: flex;
+    gap: 2rem;
+}
+
+.explor-jobs-share p {
+    margin: 0;
+}
+

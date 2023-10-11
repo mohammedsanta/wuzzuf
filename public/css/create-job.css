@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.login-page {
+    width: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-page-logo {
+    font-size: 1.5rem;
+    color: #0055D9;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-box {
+    width: 25%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    margin: 1rem auto;
+}
+
+.login-box-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.login-box-form label {
+    font-size: 20px;
+}
+
+.login-box-form label {
+
+}
+
+.login-box select {
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+.login-box-form input[type=text],
+.login-box-form input[type=tel],
+.login-box-form input[type=email],
+.login-box-form input[type=password]
+{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-box-form textarea {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+
+.login-box-form input[type=submit] {
+    width: 98%;
+    height: 3rem;
+    margin: 2rem auto;
+    box-sizing: content-box;
+    background-color: #0055D9;
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.login-papge-forget {
+    font-size: 19px;
+    text-decoration: none;
+    color: #0055D9;
+}
+
+.login-box-join {
+    font-size: 19px;
+    text-decoration: none;
+    color: #0055D9;
+}
+
+.login-box-join-title {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.login-box-join-link {
+    font-weight: 100;
+    text-decoration: none;
+    color: #0055D9;
+}
+
+.login-box-hr {
+    width: 35%;
+}

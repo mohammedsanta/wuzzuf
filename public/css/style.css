@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+}
+
+.main-app {
+    margin-top: 5rem;
+}
+
+.create-done {
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    background-color: #29db299e;
+}
+
+.welcome {
+    position: relative;
+    background-image: url('/pic/wuzzuf.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.left-logo {
+
+}
+
+.left-logo h1 {
+    color: white;
+}
+
+.left-jobs {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.auth-login {
+    color: white;
+}
+
+.auth-join {
+    padding: 5px 10px;
+    background-color: #1d1dd3;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+.auth-emp {
+    padding: 5px 10px;
+    background-color: #34ac79;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+/* Search */
+
+.search {
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.search h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.search p {
+    font-size: 25px;
+    color: white;
+}
+
+.search input {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    font-size: 25px;
+    padding: 2rem;
+}
+
+.input-sub {
+    position: relative;
+}
+
+.input-sub button {
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: #1d1dd3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}

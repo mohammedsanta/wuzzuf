@@ -1,0 +1,51 @@
+.profile-container {
+    width: 59%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-content {
+    width: 65%;
+}
+
+.bar {
+    width: 27%;
+    height: fit-content;
+    background-color: white;
+}
+
+.bar-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bar-pages a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ebedf0;
+    display: block;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 15px 24px;
+    position: relative;
+    transition: all .3s;
+}
+
+.bar-pages a:hover {
+    background: #f7faff;
+}
+
+.site-viewed::before {
+    background: #0055d9;
+    content: "";
+    height: 100%;
+    left: 24px;
+    position: absolute;
+    top: 0;
+    width: 4px;
+}

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-page {
+    /* width: 25%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f5f6f7; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('/pic/background-login.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-page-logo {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-box {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.login-box-title {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.login-box-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.login-box-form label {
+
+}
+
+.login-box-form input[type=email] {
+    width: 100%;
+    height: 2rem;
+}
+
+.login-box-form input[type=password] {
+    width: 100%;
+    height: 2rem;
+}
+
+.login-box-form input[type=submit] {
+    width: 98%;
+    height: 2rem;
+    margin: 2rem auto;
+    box-sizing: content-box;
+    background-color: #0055D9;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-papge-forget {
+    font-size: 19px;
+    text-decoration: none;
+    color: #0055D9;
+}
+
+.login-box-join {
+    font-size: 19px;
+    text-decoration: none;
+    color: #0055D9;
+}
+
+.login-box-join-title {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.login-box-join-link {
+    font-weight: 100;
+    text-decoration: none;
+    color: #0055D9;
+}
+
+.login-box-hr {
+    width: 35%;
+}
