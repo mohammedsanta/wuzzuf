@@ -1,0 +1,41 @@
+.cv {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv img {
+    width: 65%;
+    align-self: center;
+}
+
+.cv-validation {
+    text-align: center;
+}
+
+.cv-validation-p1 {
+
+}
+
+.cv-validation-p2 {
+
+}
+
+.cv-uploaded {
+    display: flex;
+    align-items: center;
+    color: #808ea5;
+    cursor: default;
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cv-uploaded-preview {
+    cursor: pointer;
+    color: rgb(0, 85, 217);
+}
+
+.cv-uploaded-delete {
+    cursor: pointer;
+    color: rgb(216, 40, 40);
+}

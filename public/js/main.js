@@ -2,17 +2,17 @@
 
 
 
-addEventListener("scroll",(ev) => {
+// addEventListener("scroll",(ev) => {
 
-    element = document.getElementById('job-fixed');
+//     element = document.getElementById('job-fixed');
 
-    if(window.scrollY >= 370) {
-        element.classList.add('job-fixed-show');
-    } else {
-        element.classList.remove('job-fixed-show');
-    }
+//     if(window.scrollY >= 370) {
+//         element.classList.add('job-fixed-show');
+//     } else {
+//         element.classList.remove('job-fixed-show');
+//     }
 
-});
+// });
 
 // 
 
@@ -36,23 +36,34 @@ const appearProfileButtons = () => {
 }
 
 
-// const disappearButtons = () => {
+// Start job types button
 
+// const selectJobTypeBut = document.querySelectorAll('#job-type');
 
-//     if(isHasClass) {
-//         console.log('disappear')
-//         profileButtons.classList.remove('buttons-profile-appear')
-//     }
+// selectJobTypeBut.forEach((but) => {
 
+//     but.addEventListener('click',() => {
+        
+//         if(but.classList.contains('types-job-types-type-true')) {
 
-// }
+//             but.getElementsByTagName('svg')[1].classList.add('hidden')
+//             but.getElementsByTagName('svg')[0].classList.remove('hidden')
 
-// const app = document.getElementById('app');
+//             but.classList.remove('types-job-types-type-true');
 
-// app.onclick = (ev => {
+            
+//         }else {
+            
+//             but.getElementsByTagName('svg')[0].classList.add('hidden')
+//             but.getElementsByTagName('svg')[1].classList.remove('hidden')
 
-//     if(isHasClass) {
-//         disappearButtons()
-//     }
+//             but.classList.add('types-job-types-type-true');
+
+//         }
+            
+//     });
 
 // });
+
+
+// End job types button

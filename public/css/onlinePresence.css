@@ -1,0 +1,36 @@
+.user-links-container {
+
+}
+
+.user-links h3 {
+
+}
+
+.user-links {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 1rem;
+}
+
+.user-links-link {
+    width: 87%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user-links-link-site {
+    width: 130px;
+}
+
+.user-links-link input {
+    box-sizing: border-box;
+    height: 40px;
+    width: 60%;
+    background-color: rgb(250, 250, 251);
+    font-size: 14px;
+    padding: 0px 12px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+}

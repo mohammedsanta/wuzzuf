@@ -1,0 +1,72 @@
+.applications {
+
+}
+
+.applications-links {
+    margin-left: 25rem;
+}
+
+.applications-links .not-vist {
+    white-space: pre;
+    padding: 0px 16px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0px;
+    cursor: pointer;
+    height: 48px;
+}
+
+.applications-links .vist {
+    white-space: pre;
+    padding: 0px 16px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0px;
+    cursor: pointer;
+    height: 48px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 85, 217);
+}
+
+.applications-container {
+    width: 500px;
+    margin: auto;
+}
+
+.applications-have-not {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applications-container-have-not-img {
+
+}
+
+.applications-container-have-not-h3 {
+    margin-top: 24px;
+    color: rgb(77, 97, 130);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.6px;
+    line-height: 34px;
+}
+
+.applications-container-have-not-p {
+    margin: 4px 0px 16px;
+    color: rgb(128, 142, 165);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+}
+

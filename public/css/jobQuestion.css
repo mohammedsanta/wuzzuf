@@ -1,0 +1,264 @@
+.job-question {
+    width: 45%;
+    margin: auto;
+}
+
+.job-question-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.job-question-tip {
+    background: rgb(247, 250, 255);
+    border: 1px solid rgb(204, 224, 255);
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    height: 160px;
+    margin-top: 8rem;
+}
+
+.job-question-tip h5 {
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    min-height: 20px;
+    border-radius: 2px;
+    max-width: 196px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+    padding: 2px 4px;
+    background-color: rgb(230, 239, 255);
+    color: rgb(0, 50, 127);
+    margin: 0;
+}
+
+.job-question-tip p {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    margin-top: 12px;
+    color: rgb(0, 20, 51);
+}
+
+.job-question-form {
+    width: 100%;
+}
+
+.job-question-form-top-header {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 56px;
+    padding: 12px 12px 12px 32px;
+    background-color: rgb(0, 30, 76);
+    color: rgb(255, 255, 255);
+    border-radius: 4px 4px 0px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+}
+
+.job-question-form-container {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    padding: 32px 32px 18px 28px;
+}
+
+.job-question-form-top-header-p {
+    
+}
+
+.job-question-form-top-header-view-job {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    line-height: 32px;
+    color: rgb(77, 97, 130);
+    background-color: rgb(255, 255, 255);
+    min-height: 32px;
+    height: 32px;
+}
+
+.job-question-form-top-header-view-job:hover {
+    background-color: rgb(235, 237, 240);
+}
+
+.job-question-form-job-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-question-form-job-about-title-p {
+
+}
+
+.job-question-form-job-about-title {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.6px;
+    line-height: 34px;
+    margin-bottom: 4px;
+}
+
+.job-question-form-job-about-p {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    color: rgb(77, 97, 130);
+}
+
+.job-question-form-job-about-img {
+    width: 84px;
+    height: 84px;
+}
+
+.job-question-form-job-about-img img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.job-question-form-questions {
+    margin-top: 1rem;
+}
+
+.job-question-form-questions-question-textatea {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.job-question-form-questions-question-the-ques {
+    color: rgb(0, 20, 51);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+}
+
+.job-question-form-questions-question-num-strings {
+    font-size: 12px;
+    align-self: end;
+    margin-left: 0.5em;
+    margin-top: 6px;
+    color: rgb(128, 142, 165);
+}
+
+.job-question-form-questions-question-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.job-question-form-questions-question-radio label {
+
+}
+
+.job-question-form-questions-question-radio div {
+
+}
+
+.job-question-form-questions-question-radio div label {
+
+}
+
+.job-question-form-questions-question-radio div label input {
+
+}
+
+.job-question-form-questions-question-the-text {
+
+}
+
+.job-question-form-p {
+    color: rgb(77, 97, 130);
+    font-size: 12px;
+    letter-spacing: -0.38px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.job-question-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.job-question-form-buttons-submit-save {
+
+}
+
+.job-question-form-buttons-cancel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Create Question */
+
+.job-questions-create-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.job-questions-create {
+
+}
+
+.job-questions-create-question {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.job-questions-create-question-question-label {
+
+}
+
+.job-questions-create-question-question {
+    height: 2rem;
+}
+
+.job-questions-create-question-question-type {
+
+}
+
+.job-questions-create-question-select {
+    
+}
+
+.job-question-create-submit {
+    margin-top: 1rem;
+}

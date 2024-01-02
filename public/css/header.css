@@ -18,6 +18,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    border-bottom: 1px solid rgb(235, 237, 240);
     z-index: 1;
 }
 
@@ -48,31 +49,163 @@ a {
     color: #1d1dd3;
 }
 
+/* Start header search */
 
 .header-search-profile {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 10px;
 }
 
 .header-search {
-
+    display: flex;
 }
 
 .header-search input {
-
+    color: rgb(13, 41, 85);
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px 0px 0px 2px;
+    width: 100%;
+    letter-spacing: -0.47px;
+    line-height: 20px;
+    font-size: 15px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    padding: 10px 8px;
+    height: 32px;
 }
 
 .header-search button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid rgb(217, 221, 228);
+    border-right: 1px solid rgb(217, 221, 228);
+    border-bottom: 1px solid rgb(217, 221, 228);
+    border-radius: 0px 2px 2px 0px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    line-height: 32px;
+    color: rgb(77, 97, 130);
+    background-color: rgb(235, 237, 240);
+    min-height: auto;
+    min-width: auto;
+    padding: 8px;
+    width: auto;
+    height: 32px;
+    border-left: none;
+    margin-left: 0px;
+}
+
+/* Search Filter */
+
+.header-search-filter {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    padding-bottom: 3rem;
+    border: 1px solid rgb(217, 221, 228);;
+}
+
+.header-search-filter-show {
+    display: flex;
+}
+
+.header-search-filter-level {
+    width: 90%;
+    height: 65px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.header-search-filter-level p {
 
 }
 
+.header-search-filter-level-levels {
+
+}
+
+.header-search-filter-level-levels a {
+    padding: 0.5rem;
+    border: 1px solid rgb(235, 237, 240);
+    background-color: rgb(250, 250, 251);
+}
+
+.header-search-filter-categories {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+}
+
+.header-search-filter-categories p {
+    padding-bottom: 0.5rem;
+}
+
+.header-search-filter-categories-container {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.header-search-filter-categories-category {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.header-search-filter-categories-category a {
+
+}
+
+.header-search-filter-location {
+    width: 90%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header-search-filter-location p {
+    padding-bottom: 0.5rem;
+}
+
+.header-search-filter-location-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-search-filter-location-locations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+/* End header search */
+
 .header-porfile {
-    width: 50px;
+    width: 40px;
+    height: 35px;
 }
 
 .header-porfile-img {
-    width: 75%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -110,7 +243,13 @@ a {
 }
 
 .buttons-profile-some-data-info {
-
+    height: 100%;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .buttons-profile-some-data-info-username {
@@ -118,7 +257,16 @@ a {
 }
 
 .buttons-profile-some-data-info-email {
-
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(128, 142, 165);
+    font-weight: 600;
+    letter-spacing: -0.37px;
+    line-height: 19px;
+    text-transform: none;
 }
 
 .buttons-profile-some-data-info-view-profile {
@@ -170,4 +318,21 @@ a {
 .buttons-profile-but-logout button {
     background-color: transparent;
     border: none;
+}
+
+.header-pages div {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.page::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    bottom: -9px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 85, 217);
+    transition: opacity 0.2s ease 0s;
 }

@@ -110,3 +110,81 @@ p {
 .login-box-hr {
     width: 35%;
 }
+
+
+/* Livewire skills */
+
+.skills-input {
+    display: flex;
+    align-items: center;
+}
+
+.skills-input p {
+    background-color: #5b88cb;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-skills {
+    width: 700px;
+    min-height: 200px;
+    background: #f5f6f7;
+    border: 1px solid rgb(217, 221, 228);
+    margin-bottom: 1rem;
+}
+
+.search-skills p {
+    text-align: center;
+}
+
+.search-skills-found {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.search-skills-found div {
+    padding: 3px 7px;
+    background-color: rgb(235, 237, 240);
+    cursor: pointer;
+}
+
+.search-skills-added {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.search-skills-added div {
+    background-color: rgba(0,126,255,.08);
+    border: 1px solid rgba(0,126,255,.24);
+    color: #007eff;
+    display: inline-block;
+    font-size: .9em;
+    line-height: 1.4;
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: top;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.search-skills-added div:hover {
+    background-color: red;
+}
+
+.need-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.need-questions-radio {
+
+}

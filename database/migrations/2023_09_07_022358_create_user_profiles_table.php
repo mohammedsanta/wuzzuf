@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('degree');
             $table->string('picture');
             $table->string('cv');
+            $table->string('experience')->nullable();
+            $table->string('CareerLevel')->nullable();
             $table->timestamps();
         });
     }

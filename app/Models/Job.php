@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Skill;
 use App\Models\Company;
+use App\Models\JobQuestion;
 use App\Models\DescriptionJob;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -37,6 +38,11 @@ class Job extends Model
 
     public function skills() {
         return $this->morphToMany(Skill::class,'skillsable');
+    }
+
+    public function question()
+    {
+        return $this->morphOne(JobQuestion::class,'jobquestion');
     }
 
 }

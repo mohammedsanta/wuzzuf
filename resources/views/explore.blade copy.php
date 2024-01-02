@@ -69,7 +69,8 @@
                                     <div class="jobs-box-about">
 
                                     <h3 class="jobs-box-about-title">{{$job->job}}</h3>
-                                        <p class="jobs-box-about-company-city">{{$job->company->get()[0]->company}} - New Cairo, Cairo</p>
+                                    
+                                    <p class="jobs-box-about-company-city">{{$job->company->get()[0]->company}} - New Cairo, Cairo</p>
                 
                                     </div>
                 

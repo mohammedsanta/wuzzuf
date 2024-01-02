@@ -8,7 +8,7 @@
         
         <p class="buttons-profile-some-data-info-username">{{ auth()->user()->FirstName }} {{ auth()->user()->LastName }}</p>
         <p class="buttons-profile-some-data-info-email">{{ auth()->user()->email }}</p>
-        <a href="{{ route('profile') }}" class="buttons-profile-some-data-info-view-profile">view profile</a>
+        <a href="{{ route( auth()->guard()->name == 'web' ? 'profile' : 'company.profile' ) }}" class="buttons-profile-some-data-info-view-profile">view profile</a>
 
     </div>
 
@@ -17,7 +17,7 @@
 <div class="buttons-profile-hr-width"></div>
 
     <div class="buttons-profile-but but-margin">  
-        <a href="{{ route('profile.update') }}">
+        <a href="{{ auth()->guard()->name == 'web' ? route('update.profile.career') : route('company.settings') }}">
          
         <svg width="22" height="22" preserveAspectRatio="none" viewBox="0 0 24 24">
             <path fill="#001433" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
@@ -93,19 +93,19 @@
     <div class="buttons-profile-hr-width"></div>
 
     <div class="buttons-profile-but">  
-        <a href="">
+        <a href="{{ route('settings.account') }}">
         
         <svg width="22" height="22" preserveAspectRatio="none" viewBox="0 0 24 24">
             <path fill="#001433" d="M18.694 12.877c.033-.28.056-.573.056-.877 0-.304-.023-.596-.068-.877l1.902-1.486a.465.465 0 0 0 .112-.573l-1.8-3.117c-.112-.202-.349-.27-.551-.202l-2.239.9a6.591 6.591 0 0 0-1.519-.877l-.337-2.385A.45.45 0 0 0 13.8 3h-3.6a.438.438 0 0 0-.439.382l-.337 2.385a6.767 6.767 0 0 0-1.52.878l-2.238-.9a.445.445 0 0 0-.551.202l-1.8 3.117a.436.436 0 0 0 .112.573l1.902 1.486a5.655 5.655 0 0 0-.08.877c0 .293.023.596.068.877l-1.901 1.486a.465.465 0 0 0-.112.573l1.8 3.116c.112.203.348.27.55.203l2.24-.9c.472.36.967.652 1.518.878l.338 2.384a.458.458 0 0 0 .45.383h3.6a.43.43 0 0 0 .439-.383l.337-2.384a6.767 6.767 0 0 0 1.519-.878l2.239.9c.202.079.438 0 .55-.203l1.8-3.116a.436.436 0 0 0-.112-.573l-1.878-1.486zM12 15.375A3.385 3.385 0 0 1 8.625 12 3.385 3.385 0 0 1 12 8.625 3.385 3.385 0 0 1 15.375 12 3.385 3.385 0 0 1 12 15.375z"></path>
         </svg>
 
-            Become a Partner
+            Settings Account
         </a>
     </div>
 
         <div class="buttons-profile-but">  
 
-            <form action="{{ route('company.logout') }}" method="POST" class="buttons-profile-but-logout">
+            <form action="{{ route( auth()->guard()->name == 'web' ? 'auth.logout' : 'company.logout') }}" method="POST" class="buttons-profile-but-logout">
 
                 <svg width="22" height="22" preserveAspectRatio="none" viewBox="0 0 24 24">
                     <path fill="#001433" d="M19.152 4c.499 0 .931.178 1.298.533.367.356.55.775.55 1.259v12.416c0 .484-.183.903-.55 1.259-.367.355-.8.533-1.298.533h-7.554c-.513 0-.95-.178-1.309-.533a1.713 1.713 0 01-.539-1.259v-3.541h1.848v3.541h7.554V5.792h-7.554v3.541H9.75V5.792c0-.484.18-.903.539-1.259.36-.355.796-.533 1.309-.533h7.554zM8.896 15.2l-2.354-2.325h8.844v-1.75H6.542L8.896 8.8 7.598 7.541 3 12l4.598 4.459L8.896 15.2z"></path>

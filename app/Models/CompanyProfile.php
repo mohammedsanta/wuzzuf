@@ -11,7 +11,12 @@ class CompanyProfile extends Model
 
     protected $fillable = [
         'picture',
-        'field',
+        'CompanyName',
+        'Field',
+        'Industry',
+        'CompanySize',
+        'CompanyAbout',
+        'MobileNumber',
         'profile_created',
     ];
 

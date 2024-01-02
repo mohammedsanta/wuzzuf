@@ -24,7 +24,7 @@ class PersonalInfoRequest extends FormRequest
         return [
             'FirstName' => 'sometimes',
             'LastName' => 'sometimes',
-            'Birthday' => 'sometimes|date',
+            'Birthday' => ['sometimes'],
             'Gender' => ['sometimes'],
             'Nationality' => ['sometimes'],
             'MaritalStatus' => ['sometimes'],

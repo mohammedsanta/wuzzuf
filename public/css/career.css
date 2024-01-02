@@ -1,0 +1,402 @@
+.hidden {
+    display: none;
+}
+
+.career {
+
+}
+
+.your-career {
+    padding: 32px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+}
+
+.your-career-h3 {
+    margin: 0rem 0 1rem 1rem;
+    font-size: 21px;
+}
+
+.your-career-careers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.your-career-careers-c {
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(235, 237, 240);
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 70px;
+    cursor: pointer;
+}
+
+.your-career-careers-c-select {
+    background-color: rgb(230, 239, 255);
+    border-color: rgb(77, 147, 255);
+    color: rgb(0, 85, 217);
+}
+
+.your-career-careers .your-career-careers-c p {
+    font-size: 15px;
+    color: rgb(77, 97, 130);
+}
+
+/* Start Types of jobs */
+
+/* livewire */
+
+.job-titles-jobs {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.job-titles-jobs-container {
+    background-color: rgba(0,126,255,.08);
+    border: 1px solid rgba(0,126,255,.24);
+    border-radius: 2px;
+    color: #007eff;
+    display: inline-block;
+    font-size: .9em;
+    line-height: 1.4;
+    margin-left: 5px;
+    margin-top: 5px;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.job-titles-jobs-job {
+    color: #007eff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.job-titles-jobs-job:hover {
+    background-color: red;
+}
+
+.job-titles-input-search {
+    width: 325px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.job-titles-input-search-p {
+    /* margin-left: 5px; */
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+/* End livewire */
+
+.types-job {
+    margin-top: 1rem;
+    padding: 32px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+}
+
+.types-job-h3 {
+
+}
+
+.types-job-typs {
+
+}
+
+.types-job-types-type {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+    border-radius: 2px;
+    border: 1px solid rgb(235, 237, 240);
+    margin-bottom: 12px;
+    background-color: rgb(250, 250, 251);
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease 0s;
+    font-size: 15px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* .types-job-types-type:hover {
+    background-color: rgb(242, 242, 243);
+    border-color: rgb(204, 210, 219);
+} */
+
+.types-job-types-type-true {
+    background-color: rgb(230, 239, 255);
+    border-color: rgb(77, 147, 255);
+    color: rgb(0, 85, 217); 
+}
+
+.types-job-types-type p {
+
+}
+
+.types-job-types-type svg {
+
+}
+
+/* End Types of jobs */
+
+/* Start job titles */
+
+.job-titles {
+    margin-top: 1rem;
+    padding: 32px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+}
+
+.job-titles-h3 {
+    
+}
+
+.job-titles-input {
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* End job titles */
+
+/* Start minimum-salary */
+
+.minimum-salary {
+
+}
+
+.minimum-salary h3 span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    margin: 0px 4px;
+    font-style: italic;
+}
+
+.minimum-salary-s {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.minimum-salary-s input {
+    box-sizing: border-box;
+    height: 40px;
+    width: 20%;
+    color: rgb(0, 20, 51);
+    background-color: rgb(250, 250, 251);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px 12px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+}
+
+.minimum-salary-s p {
+
+}
+
+.minimum-salary-range {
+    background-color: rgb(235, 237, 240);
+    color: rgb(77, 97, 130);
+    padding: 0px 6px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    min-height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.hide-minimum {
+
+}
+.hide-minimum-check {
+    
+}
+
+
+.hide-minimum-check label {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.hide-minimum-check input {
+
+}
+
+.hide-minimum p {
+    color: rgb(153, 153, 153);
+    padding-left: calc(24px);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* END minimum-salary */
+
+/* Start country-work */
+
+.country-work {
+
+}
+
+.country-work h3 span {
+    font-weight: normal;
+    margin: 0px 5px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.country-work-countries {
+
+}
+
+.country-work-countries select {
+    width: 75%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.country-work-countries-list {
+    width: 76%;
+    background-color: #e9e9e9;
+}
+
+.country-work-countries-list p {
+    font-size: 20px;
+}
+
+.country-work-countries button {
+    font-size: 15px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(77, 97, 130);
+    background-color: rgb(235, 237, 240);
+}
+
+/* End country-work */
+
+/* Start current-job */
+
+.current-job {
+
+}
+
+.current-job h3 {
+
+}
+
+.current-job select {
+    width: 85%;
+    height: 3rem;
+    font-size: 18px;
+}
+
+.current-job-companies-find {
+    display: flex;
+    gap: 1rem;
+}
+
+.current-job-companies-find input {
+    width: 20px;
+}
+
+.current-job-companies-find-text {
+
+}
+
+.current-job-companies-find-text h1 {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.current-job-companies-find-text p {
+    color: rgb(128, 142, 165);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+.current-job-my-profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.current-job-my-profile input {
+    width: 20px;
+}
+
+.current-job-my-profile h1 {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.current-job-my-profile p {
+    color: rgb(128, 142, 165);
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 4px;
+}
+
+/* End current-job */
+
+/* Start Button submit */
+
+/* .career-submit {
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 85, 217);
+    margin: 1rem 0;
+}
+
+.career-submit:hover {
+    background-color: rgb(0, 70, 178);
+} */
+
+/* End Button submit */

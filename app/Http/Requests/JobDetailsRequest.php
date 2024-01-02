@@ -27,7 +27,7 @@ class JobDetailsRequest extends FormRequest
             'EducationLevel' => ['required'],
             'Salary' => ['required'],
             'JobCategories' => ['required'],
-            'skills' => ['required'],
+            'skills' => [],
         ];
     }
 

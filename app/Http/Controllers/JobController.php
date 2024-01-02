@@ -8,9 +8,12 @@ use App\Models\User;
 use App\Models\Skill;
 use App\Models\Company;
 use App\Models\JobDetails;
+use App\Models\JobQuestion;
+use App\Models\UserSavedJob;
 use Illuminate\Http\Request;
 use App\Http\Requests\JobRequest;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\CreateQuestion;
 use App\Http\Requests\JobDetailsRequest;
 
 class JobController extends Controller
@@ -22,6 +25,61 @@ class JobController extends Controller
     {
         return view('explore',[
             'jobs' => Job::all()
+        ]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function applications()
+    {
+        return view('applications');
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function archive()
+    {
+        return view('archive');
+    }
+
+    public function question($id)
+    {
+        $job = Job::find($id);
+        return view('job.jobQuestion',[
+            'job' => $job,
+            'questions' => $job->question()->get()
+        ]);
+    }
+
+    public function applicationPost()
+    {
+        $data = request()->except('_token');
+
+        foreach($data as $key => $answer) {
+            $id = substr($key,-1);
+            JobQuestion::find($id)->answer()->create(['Answer' => $answer]);
+        }
+
+        return redirect('/job');
+    }
+
+    /**
+     * Display a listing of saved resource.
+     */
+    public function saved()
+    {
+        $saves = UserSavedJob::where('user_id',auth()->user()->id)->get();
+        $jobs = [];
+
+        foreach($saves as $key => $item) {
+            $jobs[$key] = Job::find($item->job_id);
+        }
+
+        return view('saved',[
+            'jobs' => $jobs,
+            'drafts' => $jobs,
         ]);
     }
 
@@ -53,10 +111,6 @@ class JobController extends Controller
      */
     public function store(JobRequest $request,JobDetailsRequest $requestJobDetails)
     {
-
-        // dd($request->all(['description','requirements']));
-
-
         // create job and his details
 
         $companyId = Auth::guard('company')->user()->id;
@@ -111,7 +165,37 @@ class JobController extends Controller
             }
         }
 
+        if(request('questions') == 'yes') {
+            return redirect("job/question/create/$createdJob->id");
+        }
+
         return redirect('/job');
+    }
+
+    public function questionView($id)
+    {
+        $job = Job::find($id);
+        return view('job.createQuestion',[
+            'JobId' => $id
+        ]);
+    }
+
+    public function questionCreate($id)
+    {
+        
+        $data = request()->except('_token');
+
+        for($i = 0;$data['questions'] > $i;$i++) {
+
+            Job::find($id)->question()->create([
+                'Question' => $data["Question$i"],
+                'Type' => $data["Type$i"],
+            ]);
+
+        }
+
+        return redirect('/job');
+
     }
 
     /**

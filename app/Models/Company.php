@@ -3,7 +3,9 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\CompanyLink;
 use App\Models\CompanyProfile;
+use App\Models\CompanyLocation;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -51,6 +53,14 @@ class Company extends Authenticatable
 
     public function profile() {
         return $this->morphOne(CompanyProfile::class,'companyable');
+    }
+
+    public function location() {
+        return $this->morphOne(CompanyLocation::class,'complocation');
+    }
+
+    public function links() {
+        return $this->morphOne(CompanyLink::class,'complinks');
     }
     
     public function job()

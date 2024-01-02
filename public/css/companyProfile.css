@@ -1,0 +1,351 @@
+.company-profile {
+
+}
+
+.company-profile-top {
+    position: relative;
+    top: -70px;
+    z-index: 0;
+    padding-bottom: 0;
+}
+
+.company-profile-top-container {
+    width: 60%;
+    margin: auto;
+}
+
+.company-profile-top-cover {
+    height: 195px;
+    width: 100%;
+    background-color: rgb(64, 86, 120);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.company-profile-top-about {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: -40px;
+    left: 30px;
+}
+
+.company-profile-top-about-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    border: 1px solid rgb(217, 221, 228);
+    overflow: hidden;
+}
+
+.company-profile-top-about-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.company-profile-top-about-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.5rem;
+    position: relative;
+    top: 20px;
+}
+
+.company-profile-top-about-data-p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    color: rgb(77, 97, 130);
+    max-width: 464px;
+}
+
+.company-profile-top-company-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    display: inline-block;
+    margin: 0px;
+    max-width: 300px;
+}
+
+.company-profile-top-about-field {
+
+}
+
+.company-profile-top-about-count-employees {
+
+}
+
+.company-profile-top-about-links {
+    display: flex;
+    align-items: center;
+}
+
+.company-profile-top-about-links-site {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 1rem;
+}
+
+.company-profile-top-about-links-site svg {
+
+}
+
+.company-profile-top-about-links-site a {
+
+}
+
+.company-profile-top-about-links-social {
+    border-left: 1px solid rgb(102, 120, 147);
+}
+
+.company-profile-top-about-links-social svg {
+
+}
+
+.company-profile-top-about-category {
+
+}
+
+.company-profile-top-category-f {
+    position: relative;
+    display: inline-flex;
+    padding: 18px 22px;
+    color: rgb(0, 85, 217);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.47px;
+    line-height: 13px;
+    border-bottom: solid 1px rgb(0, 85, 217);;
+}
+
+.company-profile-top-category-s {
+    position: relative;
+    padding: 18px 22px;
+    color: rgb(128, 142, 165);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.47px;
+    line-height: 13px;
+}
+
+/* Bottom */
+
+.company-profile-bottom {
+    width: 60%;
+    position: relative;
+    top: -65px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-profile-bottom-contianer {
+    width: 90%;
+}
+
+.company-profile-bottom-profile {
+    width: 92%;
+}
+
+.company-profile-bottom-profile h3 {
+    margin: 0;
+}
+
+.company-profile-bottom-profile-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0 3rem;
+}
+
+.company-profile-bottom-profile-data div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-profile-p {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    margin-left: 4px;
+    display: inline-block;
+    max-width: 254px;
+}
+
+.company-profile-span {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+}
+
+.company-profile-bottom-profile-some-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-profile-bottom-profile-about {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    color: rgb(77, 97, 130);
+    margin: 24px 0px 0px;
+    word-break: break-word;
+}
+
+/* Explore */
+
+.company-profile-bottom-explore {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+}
+
+.company-profile-bottom-explore h4 {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    margin: 0px 0px 12px;
+}
+
+.company-profile-bottom-explore p {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    color: rgb(77, 97, 130);
+    margin: 0px 0px 16px
+}
+
+.company-profile-bottom-explore button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(0, 85, 217);
+    background-color: rgb(217, 232, 255);
+    width: 100%;
+}
+
+.company-profile-bottom-explore button:hover {
+    background-color: rgb(204, 224, 255);
+}
+
+/* Jobs */
+
+.company-profile-bottom-jobs {
+    width: 92%;
+    margin-bottom: 2rem;
+}
+
+.company-profile-bottom-jobs h4 {
+    margin: 0;
+}
+
+.company-profile-bottom-jobs-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-profile-bottom-jobs-container-job {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 4px;
+    padding: 16px 24px;
+}
+
+.company-profile-bottom-jobs-container-job-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    color: rgb(0, 85, 217);
+}
+
+.company-profile-bottom-jobs-container-job-title span {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+}
+
+.company-profile-bottom-jobs-container-job-type {
+
+}
+
+.company-profile-bottom-jobs-container-job-type p {
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 20px;
+    margin-right: 4px;
+    max-width: 196px;
+    background-color: rgb(235, 237, 240);
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding: 0px 4px;
+    border-radius: 4px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.company-profile-bottom-jobs-containerjob-tags {
+
+}
+
+.company-profile-bottom-jobs-containerjob-tags a {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+    text-decoration: none;
+    display: inline-block;
+    white-space: pre;
+}
+
+.company-profile-bottom-jobs-containerjob-tags-date-create {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    display: inline-block;
+    color: rgb(44, 146, 102);
+}

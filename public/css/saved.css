@@ -1,0 +1,218 @@
+.saved {
+    width: 50%;
+    margin: auto;
+}
+
+/* Drafts */
+
+.saved-drafts {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box {
+    background-color: white;
+    padding: 5px 1.5rem;
+    border: 1px solid rgb(217, 221, 228);
+}
+
+.saved-drafts-h2 {
+    font-size: 20px;
+    font-family: "Open Sans";
+    line-height: 20px;
+    color: rgb(0, 20, 51);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.saved-drafts-p {
+    font-size: 12px;
+    font-family: "Open Sans";
+    line-height: 20px;
+    color: rgb(102, 120, 147);
+    max-width: 640px;
+}
+
+.saved-drafts-draft {
+    border: 1px solid rgb(179, 209, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.saved-drafts-draft-text {
+    background-color: rgb(247, 250, 255);
+    padding: 8px 24px;
+    border-bottom: 1px solid rgb(179, 209, 255);
+    border-radius: 2px 2px 0px 0px;
+    display: flex;
+    gap: 1rem;
+}
+
+.saved-drafts-draft-text-icon {
+    display: flex;
+    align-items: center;
+}
+
+.saved-drafts-draft-text-texts {
+
+}
+
+.saved-drafts-draft-text-header {
+    color: rgb(0, 85, 217);
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.saved-drafts-draft-text-p {
+    color: rgb(102, 120, 147);
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans";
+    font-size: 11px;
+    width: 100%;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.draft-jobs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.save-jobs-buttons {
+    margin-bottom: 5px;
+}
+
+.save-jobs-buttons-delete {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    background-color: transparent;
+    color: rgb(216, 40, 40);
+}
+
+/* save job */
+
+.saves-jobs {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.save-jobs-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.save-jobs-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(245, 246, 247);
+    padding-bottom: 1rem;
+}
+
+.save-jobs-box-right {
+    
+}
+
+.jobs-box-about {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.save-jobs-box-about-title {
+    letter-spacing: 0px;
+    line-height: 22px;
+    font-weight: 600;
+    color: rgb(0, 85, 217);
+    font-size: 16px;
+    margin: 0;
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+
+.jobs-box-about-title a {
+
+}
+
+.save-jobs-box-about-title-job-type {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-jobs-box-about-company-city {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.37px;
+    line-height: 19px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: rgb(0, 20, 51);
+}
+
+.save-jobs-box-about-company-city-span {
+    letter-spacing: -0.34px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(77, 97, 130);
+    display: inline-block;
+    font-size: 11px;
+}
+
+.save-jobs-box-job-tags {
+    margin-top: 5px;
+    font-size: 12px;
+    letter-spacing: -0.37px;
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+    font-family: "Open Sans";
+    max-width: 560px;
+}
+
+.save-jobs-box-job-tags p {
+
+}
+
+.save-jobs-box-img {
+    min-width: 70px;
+    height: 70px;
+}
+
+.save-jobs-box-img img {
+    min-width: 70px;
+    height: 70px;
+    border-radius: 2px;
+    margin-left: 15px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+

@@ -4,10 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Company;
+use App\Models\UserSkill;
 use App\Models\UserProfile;
 use Illuminate\Http\Request;
 use App\Models\CompanyProfile;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\AddSkillRequest;
+use App\Http\Requests\UserLinksRequest;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\NumLocationRequest;
 use App\Http\Requests\PersonalInfoRequest;
 
@@ -30,12 +34,107 @@ class ProfileController extends Controller
     {
         $user = User::find(auth()->user()->id);
 
+        // dd($user);
+
         return view('profile.updateGeneralinfo',[
             'user' => $user,
-            'info' => $user->userPersonalInfo()->get()[0],
+            'info' => $user->userPersonalInfo()->get()[0] ?? '' ,
             'location' => $user->userNumLocation()->get()[0] ?? '',
             'companies' => $this->companies()
         ]);
+    }
+
+    public function uploadCv()
+    {
+        return view('profile.uploadCv');
+    }
+
+    public function createCV(request $request)
+    {
+        $cv = $request->file('cv')->store('cv/'.auth()->user()->id.'/');
+        
+        // dd($cv);
+
+        auth()->user()->cv()->create([
+            'cv' => $cv
+        ]);
+
+        return back()->with(['success' => 'CV Has Been Uploaded']);
+    }
+
+    public function experience()
+    {
+        return view('profile.experience');
+    }
+
+    public function skills()
+    {
+        // $skills = ['PHP','Information Technology (IT)','OOP','MVC','AJAX','Back-End Development','Web Development','Laravel','Laravel Framework','PHP Web Development','MySQL'];
+
+        return view('profile.skills');
+    }
+
+    public function addSkill(AddSkillRequest $request)
+    {
+
+        Auth()->user()->skill()->create($request->except('_token'));
+
+        return back()->with(['success' => 'Add Successfully']);
+
+    }
+
+    public function updateSkill(AddSkillRequest $request)
+    {
+        $skill = UserSkill::where('user_id',Auth()->user()->id)->where('skill',request('skill'))->get();
+        dd('a7a');
+        $skill->update($request->validated());
+
+        return back()->with(['success' => 'update Successfully']);
+    }
+
+    public function education()
+    {
+        return view('profile.education');
+    }
+
+    public function onlinePresence()
+    {
+        return view('profile.onlinePresence',[
+            'links' => count(auth()->user()->userLink()->get()) ? auth()->user()->userLink()->get()[0] : auth()->user() ,
+        ]);
+    }
+
+    public function createOnlinePresence(UserLinksRequest $request)
+    {
+        if(count(auth()->user()->userLink()->get())) {
+            auth()->user()->userLink()->update($request->validated());
+        } else {
+            auth()->user()->userLink()->create($request->validated());
+        }
+        return back();
+    }
+
+    public function achievements()
+    {
+        return view('profile.achievements',[
+            'achievements' => count(auth()->user()->userAchievements()->get()) ? auth()->user()->userAchievements()->get()[0] : auth()->user(), 
+        ]);
+    }
+
+    public function PostAchievements()
+    {
+        // dd(request('Achievements'));
+        if(count(auth()->user()->userAchievements()->get())) {
+            auth()->user()->userAchievements()->update(['Achievements' => request('Achievements')]);
+        } else {
+            auth()->user()->userAchievements()->create(['Achievements' => request('Achievements')]);
+        }
+        return back();
+    }
+
+    public function settings()
+    {
+        return view('profile.settings');
     }
 
     /**
@@ -54,9 +153,9 @@ class ProfileController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function career()
     {
-        //
+        return view('profile.updateCareer');
     }
 
     /**
@@ -64,20 +163,31 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        $userId = Auth()->user()->id;
+        $user = Auth()->user();
 
         $profile = $request->validate([
-            'field' => ['required'],
-            'degree' => ['required'],
-            'cv' => ['required'],
+            // 'field' => ['sometime'],
+            // 'degree' => ['sometime'],
+            // 'cv' => ['sometime'],
+            'picture' => ['required'],
         ]);
-        $profile['cv'] = $request->file('cv')->store('/cv/' . 'userId-' . $userId);
-        $profile['picture'] = $request->file('picture')->store('/picture/' . 'userId-' . $userId);
+        // $profile['cv'] = $request->file('cv')->store('/cv/' . 'userId-' . $userId);
+        // dd($profile);
+        $profile['picture'] = $request->file('picture')->store('/picture/' . 'userId-' . $user->id);
 
-        $profile['user_id'] = $userId;
+        // $profile['user_id'] = $userId;
         $profile['profile_created'] = true;
+        $profile['field'] = '';
+        $profile['degree'] = '';
+        $profile['cv'] = '';
 
-        UserProfile::create($profile);
+        if(count($user->profile()->get()) == 0) {
+            $user->profile()->create($profile);
+        } else {
+            Storage::delete($user->profile()->get()[0]->picture);
+            $user->profile()->update($profile);
+        }
+
 
         return redirect('/profile')->with(['success' => 'create has been done']);
     }
@@ -131,7 +241,6 @@ class ProfileController extends Controller
         $LName = $request->validated('LastName');
 
         $willUpdate = $request->validated();
-
 
         // Update first name and last name
 

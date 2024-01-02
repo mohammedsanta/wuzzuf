@@ -1,0 +1,204 @@
+.settings-account {
+    width: 40%;
+    margin: auto;
+}
+
+.settings-account-profile-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.settings-account-profile-settings h4 {
+    margin: 0;
+}
+
+.settings-account-profile-settings-p {
+
+}
+
+.settings-account-profile-settings-profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.settings-account-profile-settings-profile input {
+    width: 50px;
+}
+
+.settings-account-profile-settings-profile-text {
+
+}
+
+.settings-account-profile-settings-profile-text:first-child {
+
+}
+
+.settings-account-profile-settings-your-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.settings-account-profile-settings-your-link button {
+    margin: 0;
+}
+
+/* Start Change password */
+
+.settings-account-change-password {
+
+}
+
+.settings-account-change-password label {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+    color: rgb(51, 75, 111);
+}
+
+.settings-account-change-password input {
+    height: 1.2rem;
+}
+
+.settings-account-change-password h4 {
+    margin: 0;
+}
+
+.settings-account-change-password-p {
+
+}
+
+.settings-account-change-password-current {
+    margin-top: 1rem;
+    width: 45%;
+}
+
+.settings-account-change-password-new {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+.settings-account-change-password-new div label {
+
+}
+
+
+/* End Change password */
+
+
+/* Start Change Email */
+
+.settings-account-change-email {
+
+}
+
+.settings-account-change-email h4 {
+    margin: 0;
+}
+
+.settings-account-change-email-p {
+    margin-top: 1rem;
+}
+
+.settings-account-change-email-p-span {
+    font-weight: bold;
+}
+
+.settings-account-change-email-inputs {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.settings-account-change-email-inputs div {
+
+}
+
+.settings-account-change-email-inputs div label {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+    color: rgb(51, 75, 111);
+}
+
+.settings-account-change-email-inputs div input {
+    height: 1.3rem;
+}
+
+/* End Change Email */
+
+/* Start Subscriptions */
+
+.settings-account-subscriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.settings-account-subscriptions input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.settings-account-subscriptions h4 {
+    margin: 0;
+}
+
+.settings-account-subscriptions-receive-new-jobs-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.settings-account-subscriptions-receive-new-jobs-container select {
+
+}
+
+.settings-account-subscriptions-receive-new-jobs {
+    display: flex;
+    gap: 1rem;
+}
+
+.settings-account-subscriptions-check {
+    display: flex;
+    gap: 1rem;
+}
+
+/* End Subscriptions */
+
+/* Start Delete Account */
+
+.settings-account-delete {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.settings-account-delete h4 {
+    margin: 0;
+}
+
+.settings-account-delete p {
+
+}
+
+.settings-account-delete button {
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 48, 48);
+}
+
+/* End Delete Account */

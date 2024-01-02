@@ -1,4 +1,135 @@
+/* profile cv */
 
+.explor-profile-cv {
+    margin-top: 83px;
+}
+
+.explort-profile-cv-box {
+    margin-bottom: 12px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    width: 280px;
+    padding: 30px;
+}
+
+.explort-profile-cv-box-top {
+    display: flex;
+    align-items: center;
+}
+
+.explort-profile-cv-box-img {
+
+}
+
+.explort-profile-cv-box-img img {
+    margin-right: 13px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-clip: padding-box;
+    background-size: cover;
+}
+
+.explort-profile-cv-box-about {
+
+}
+
+.explort-profile-cv-box-about-name {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    color: rgb(0, 20, 51);
+}
+
+.explort-profile-cv-box-about-feild {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    color: rgb(77, 97, 130);
+}
+
+.explort-profile-cv-box-p1 {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    color: rgb(0, 20, 51);
+}
+
+.explort-profile-cv-box-p2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    color: rgb(77, 97, 130);
+}
+
+.explort-profile-cv-box-add-links {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    width: fit-content;
+    min-width: 157px;
+    height: 32px;
+    margin-top: 20px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 85, 217);
+    border-radius: 2px;
+    color: rgb(0, 85, 217);
+}
+
+.explort-profile-cv-box-add-links:hover {
+    background-color: rgb(230, 239, 255);
+}
+
+.explort-profile-cv-button {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 20, 51);
+    width: 100%;
+}
+
+.explort-profile-cv-button:hover {
+    background-color: rgb(13, 41, 85);
+}
 
 /* jobs */
 
@@ -19,6 +150,7 @@
 .explor {
     width: 60%;
     margin: 2rem auto;
+    display: flex;
 }
 
 .explor h2 {
@@ -29,12 +161,13 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-right: 1rem;
 }
 
 .explor-box {
-    width: 65%;
+    /* width: 65%; */
     background-color: white;
-    padding: 1.3rem;
+    padding: 5px 1.5rem;
     border: 1px solid rgb(217, 221, 228);
 }
 
@@ -48,6 +181,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(245, 246, 247);
+    padding-bottom: 1rem;
 }
 
 .explor-jobs-box-right {
@@ -55,22 +190,61 @@
 }
 
 .jobs-box-about {
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .jobs-box-about-title {
+    letter-spacing: 0px;
+    line-height: 22px;
+    font-weight: 600;
+    color: rgb(0, 85, 217);
+    font-size: 16px;
     margin: 0;
-    font-size: 20px;
-    color: #1d1dd3;
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+
+.jobs-box-about-title-job-type {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.jobs-box-about-title a {
+    color: rgb(0, 85, 217);
 }
 
 .jobs-box-about-company-city {
-    margin: 12px 0 0 0;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.37px;
+    line-height: 19px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: rgb(0, 20, 51);
+}
+
+.jobs-box-about-company-city-span {
+    letter-spacing: -0.34px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgb(77, 97, 130);
+    display: inline-block;
+    font-size: 11px;
 }
 
 .explor-jobs-box-job-tags {
-
+    margin-top: 5px;
+    font-size: 12px;
+    letter-spacing: -0.37px;
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+    font-family: "Open Sans";
+    max-width: 560px;
 }
 
 .explor-jobs-box-job-tags p {
@@ -79,20 +253,69 @@
 }
 
 .explor-jobs-box-img {
-    /* width: 100%; */
+    min-width: 70px;
+    height: 70px;
 }
 
 .explor-jobs-box-img img {
-    width: 100px;
-    height: 100px;
+    min-width: 70px;
+    height: 70px;
+    border-radius: 2px;
+    margin-left: 15px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
+/* Livewire */
+
 .explor-jobs-share {
+    margin-top: 10px;
     display: flex;
     gap: 2rem;
+}
+
+.explor-jobs-share-but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.44px;
+    line-height: 13px;
+}
+
+.explor-jobs-share-but:hover {
+    background-color: rgb(235, 237, 240);
 }
 
 .explor-jobs-share p {
     margin: 0;
 }
 
+.save-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-count {
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+    background-color: rgb(0, 85, 217);
+    color: rgb(255, 255, 255);
+    min-height: 18px;
+    padding: 0px 4px;
+}

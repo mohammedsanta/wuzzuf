@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('company_profiles', function (Blueprint $table) {
             $table->id();
             $table->morphs('companyable');
-            $table->string('profile_created');
             $table->string('field');
-            $table->string('picture');
+            $table->string('picture')->nullable();
+            $table->string('Industry');
+            $table->string('CompanySize');
+            $table->string('CompanyAbout');
+            $table->string('MobileNumber');
             $table->timestamps();
         });
     }

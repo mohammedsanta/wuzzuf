@@ -1,0 +1,312 @@
+.applications {
+
+}
+
+.applications-links {
+    margin-left: 25rem;
+}
+
+.applications-links .not-vist {
+    white-space: pre;
+    padding: 0px 16px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0px;
+    cursor: pointer;
+    height: 48px;
+}
+
+.applications-links .vist {
+    white-space: pre;
+    padding: 0px 16px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0px;
+    cursor: pointer;
+    height: 48px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 85, 217);
+}
+
+.application-container {
+
+}
+
+.applications-have-not {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applications-container-have-not-img {
+
+}
+
+.applications-container-have-not-h3 {
+    margin-top: 24px;
+    color: rgb(77, 97, 130);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.6px;
+    line-height: 34px;
+}
+
+.applications-container-have-not-p {
+    margin: 4px 0px 16px;
+    color: rgb(128, 142, 165);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+}
+
+.applications-container-have-not-button {
+
+}
+
+/* Application user start */
+
+.applications-apps {
+    margin: 1rem 0 0 25rem;
+}
+
+.applications-app {
+    width: 600px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px solid rgb(38, 123, 255);
+    box-shadow: rgb(204, 224, 255) 0px 0px 0px 3px;
+    position: relative;
+}
+
+.applications-app-before {
+    position: absolute;
+    width: 16px;
+    top: 16px;
+    height: 16px;
+    right: -15px;
+    border-left: 1px solid white;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+}
+
+.applications-app-before::before {
+    content: "";
+    top: -1px;
+    border-radius: 2px;
+    position: absolute;
+    border: 1px solid rgb(38, 123, 255);
+    box-shadow: rgb(204, 224, 255) 0px 0px 0px 3px;
+    background-color: rgb(255, 255, 255);
+    left: -12px;
+    width: 16px;
+    height: 16px;
+    transform: rotateZ(45deg);
+}
+
+.applications-app-img {
+    width: 100px;
+}
+
+.applications-app-img  img {
+    width: 100%;
+}
+
+.applications-app-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.applications-app-info-title {
+    margin: 0;
+    color: rgb(0, 20, 51);
+    margin: 0px 8px 0px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.applications-app-info-address {
+
+}
+
+.applications-app-info-address-p {
+
+}
+
+.applications-app-info-applied {
+    display: flex;
+    align-items: center;
+}
+
+.applications-app-info-applied-p {
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 20px;
+    max-width: 196px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+    padding: 2px 4px;
+    background-color: rgb(235, 237, 240);
+    color: rgb(0, 20, 51);
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.applications-app-info-applied-time {
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    white-space: nowrap;
+    color: rgb(128, 142, 165);
+}
+
+/* Data */
+
+.applications-app-data {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    position: absolute;
+    cursor: auto;
+    top: -1px;
+    right: 0px;
+    transform: translateX(calc(100% + 24px));
+    width: 484px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 3px 3px -2px, rgba(0, 0, 0, 0.2) 0px 1px 8px 0px;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.applications-app-data-title {
+    color: rgb(0, 85, 217);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    line-height: 34px;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+
+.applications-app-data-address {
+
+}
+
+.applications-app-data-address-p {
+    color: rgb(77, 97, 130);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 21px;
+}
+
+.applications-app-data-address-p-company-name {
+    white-space: pre;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.applications-app-data-posted {
+
+}
+
+.applications-app-data-details {
+    display: flex;
+}
+
+.applications-app-data-details-container {
+    display: flex;
+    gap: 3px;
+    width: 95px;
+    margin-right: 10px;
+}
+
+.applications-app-data-details-num {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+    line-height: 27px;
+    margin-right: 8px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.applications-app-data-details-applicants {
+    line-height: 19px;
+    font-size: 14px;
+    letter-spacing: -0.37px;
+    margin-right: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.applications-app-data-details-info {
+    display: flex;
+    gap: 10px;
+}
+
+.applications-app-data-details-info div {
+    border-right: 1px solid rgb(217, 221, 228);
+    padding-right: 5px;
+}
+
+.applications-app-data-details-info-num {
+
+}
+
+.applications-app-data-details-info-viewd {
+    line-height: 19px;
+    color: rgb(77, 97, 130);
+    font-size: 12px;
+    letter-spacing: -0.37px;
+    text-align: center;
+}
+
+.applications-app-data-details-info-consideration {
+    line-height: 19px;
+    color: rgb(44, 146, 102);
+    font-size: 12px;
+    letter-spacing: -0.37px;
+    text-align: center;
+}
+
+.applications-app-data-details-info-not-selected {
+    line-height: 19px;
+    color: rgb(254, 48, 48);
+    font-size: 12px;
+    letter-spacing: -0.37px;
+    text-align: center;
+}
+
+/* Application user end */

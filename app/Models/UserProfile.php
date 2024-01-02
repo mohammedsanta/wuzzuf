@@ -18,4 +18,8 @@ class UserProfile extends Model
         'cv',
     ];
 
+    public function profile() {
+        return $this->morphsTo();
+    }
+
 }
