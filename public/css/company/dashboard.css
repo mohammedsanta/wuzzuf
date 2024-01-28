@@ -1,0 +1,426 @@
+.hello {
+
+}
+
+.hello h1 {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: -0.55px;
+}
+
+.hello button {
+
+}
+
+.hello svg {
+    margin-left: 5px;
+}
+
+.dashboard-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboard-container {
+    width: 80%;
+}
+
+.posts {
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    height: 700px;
+}
+
+.posts h2 {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.posts .hr {
+    height: 24px;
+    border-bottom: 1px solid rgb(217, 221, 228);
+}
+
+.posts-no-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.posts-no-content img {
+
+}
+
+.posts-no-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.51px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.posts-no-content p {
+    color: rgb(89, 108, 138);
+    font-family: "Open Sans";
+    font-size: 14px;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    width: 367px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.posts-no-content .no-content-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts-no-content .no-content-buttons svg {
+    margin-left: 5px;
+}
+
+/* invite */
+
+.invite {
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+}
+
+.invite-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #d9dde4;
+}
+
+.invite-title svg {
+    margin-left: 1rem;
+}
+
+.invite-title p {
+    color: #001433;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.invite-no-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.invite-no-content img {
+
+}
+
+.invite-no-content h3 {
+    color: #001433;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -.45px;
+    line-height: 18px;
+    margin: 16px 0 5px;
+    padding: 0;
+}
+
+.invite-no-content p {
+    color: #808ea5;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.invite-no-content button {
+
+}
+
+/* start aside */
+
+aside {
+
+}
+
+.complete-company-profile {
+    background: rgb(230, 239, 255);
+    border: 1px solid rgb(179, 209, 255);
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.complete-company-profile-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.complete-company-profile-title p {
+
+}
+
+.complete-company-profile-title svg {
+
+}
+
+.complete-company-profile-complete-steps {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    color: rgb(0, 46, 134);
+}
+
+.complete-company-profile-precentage {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 10px;
+    width: 100%;
+    border: 1px solid rgb(204, 224, 255);
+    border-radius: 5px;
+}
+
+.complete-company-profile-adding {
+}
+
+.complete-company-profile-adding .add {
+    display: flex;
+    height: 38px;
+    background: rgb(247, 250, 255);
+    border: 1px solid rgb(204, 224, 255);
+    border-radius: 8px;
+    margin-top: 12px;
+    color: rgb(0, 46, 134);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0px 10px;
+    text-decoration: initial;
+    cursor: pointer;
+}
+
+.complete-company-profile-adding .add .add-check {
+
+}
+
+.complete-company-profile-adding .add .add-p {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 18px;
+    margin-left: 8px;
+    color: rgb(51, 75, 111);
+    user-select: none;
+}
+
+.complete-company-profile-adding .add svg {
+
+}
+
+/*  */
+
+.cover-photo {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.top {
+    background: center center / cover no-repeat rgb(0, 20, 51);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top a {
+    font-size: 14px;
+    border: 1px solid rgb(217, 221, 228);
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    line-height: 32px;
+    padding: 2px;
+    margin-top: 16px;
+    background: transparent;
+    min-height: 24px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-top: 3rem;
+}
+
+.top a svg {
+
+}
+
+.cover-photo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.photo-box {
+    width: 90px;
+    height: 90px;
+    background: rgb(230, 239, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid rgb(255, 255, 255);
+    flex-flow: column;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.photo-box .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-box .box svg {
+
+}
+
+.photo-box .box p {
+    color: rgb(128, 142, 165);
+    font-size: 11px;
+    letter-spacing: -0.3px;
+    line-height: 13px;
+}
+
+.cover-photo-container .company-name {
+
+}
+
+.cover-photo-container .view-company-page {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 85, 217);
+    text-decoration: underline;
+}
+
+.cover-photo-container .view-company-page svg {
+
+}
+
+.cover-photo-container .view-company-page a {
+
+}
+
+.cover-photo-container .edit-company-page {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 85, 217);
+    text-decoration: underline;
+}
+
+.cover-photo-container .edit-company-page svg {
+
+}
+
+.cover-photo-container .edit-company-page a {
+
+}
+
+.cover-photo-container .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 32px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 146, 102);
+    margin: 5px 0px;
+    text-decoration: none;
+    width: 80%;
+}
+
+.team-activity {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.team-activity h4 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+    text-align: center;
+}
+
+.team-activity p {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: rgb(77, 97, 130);
+}
+
+.team-activity .button {
+    display: flex;
+    gap: 3px;
+}
+
+.team-activity .button path {
+    fill: rgb(255, 255, 255);
+}

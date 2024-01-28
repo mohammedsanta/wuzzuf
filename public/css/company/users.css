@@ -1,0 +1,164 @@
+.users-company {
+
+}
+
+.users-title {
+
+}
+
+.users-title h1 {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.users-email {
+
+}
+
+.users-email div {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.users-email p {
+
+}
+
+.users-email p a {
+    color: #2890B6;
+    text-decoration: underline;
+}
+
+.users-user-settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.users-user-settings-text {
+
+}
+
+.users-user-settings-tab {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.users-user-settings-tab-tabs {
+    width: 55%;
+    display: flex;
+    gap: 10px;
+}
+
+.users-user-settings-tab .tab {
+    width: 160px;
+    height: 30px;
+    background-image: url(/pic/tabs.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 9px;
+}
+
+.users-user-settings-tab .tab:hover {
+    background-position: 0px -34px;
+}
+
+.users-user-settings-tab .active-tab {
+    background-position: 0px -34px;
+}
+
+.users-user-settings-tab span {
+
+}
+
+.users-user-settings-tab span b {
+
+}
+
+.users-user-settings-tabs span b select {
+
+}
+
+/* Table */
+
+.users-user-settings-table {
+    width: 95%;
+}
+
+.users-user-settings-table th {
+    font-family: inherit;
+    color: #505050;
+    font-size: 100%;
+    background-image: url(/pic/hrepeat.png);
+    background-position: 0 -241px;
+    background-repeat: repeat-x;
+    height: 42px;
+    border-right: #dddddd solid 1px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.users-user-settings-table .table-content tr td {   
+    background-color: #f9f9f9;
+    height: 35px;
+    border-right: 1px solid #DDD;
+    padding-left: 5px;
+}
+
+.table-footer {
+    background-image: url(/pic/hrepeat.png);
+    background-position: 0 -283px;
+    background-repeat: repeat-x;
+    height: 16px;
+}
+
+.users-user-settings-buttons {
+    width: 95%;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.users-user-settings-buttons .blue {
+    color: #fff;
+    background-color: #3794ce;
+    border-color: #2e86bd;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.users-user-settings-buttons .blue:hover {
+    color: #fff;
+    background-color: #2978a9;
+    border-color: #22638c;
+}
+
+.users-user-settings-buttons a {
+    color: #217fb6;
+    font-weight: 400;
+    border-radius: 0;
+}
+
+.users-user-settings-buttons a:hover {
+    color: #155275;
+    text-decoration: underline;
+}

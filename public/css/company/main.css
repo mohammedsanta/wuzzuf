@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background-color: #f5f6f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.required_star {
+    vertical-align: top;
+    color: red;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.main-company {
+
+}
+
+.main-company-content {
+    width: 60%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.white-div {
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.blue-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 85, 217);
+}
+
+.blue-button:hover {
+    background-color: rgb(0, 70, 178);
+}
+
+.gray-button {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    color: rgb(77, 97, 130);
+    background-color: rgb(235, 237, 240);
+    width: 148px;
+    height: 32px;
+    line-height: normal;
+}
+
+.transpare-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(77, 97, 130);
+    background-color: transparent;
+    margin-right: 8px;
+}
+
+.transpare-button:hover {
+    background-color: rgb(235, 237, 240);
+}
+
+.the-title {
+    color: rgb(0, 20, 51);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+}
+
+.main-input {
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 38px;
+    width: 100%;
+    padding: 0px 16px;
+    background: rgb(250, 250, 251);
+    border-radius: 2px;
+    border: 1px solid rgb(217, 221, 228);
+}
+
+/* input */
+
+.input {
+    width: 500px;
+}
+
+.input label {
+
+}
+
+.input input {
+    color: rgb(13, 41, 85);
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    width: 100%;
+    letter-spacing: -0.47px;
+    line-height: 20px;
+    font-size: 15px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    padding: 10px 8px;
+}
+
+/* End inpput */
+
+/* select */
+
+.select {
+    display: flex;
+    align-items: center;
+}
+
+.select label {
+    width: 80px;
+    color: rgb(0, 20, 51);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+}
+
+.select select {
+    border-radius: 2px;
+    height: 40px;
+    background: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    padding: 5px 8px;
+}
+
+/* End select */
+
+/* box select */
+
+.box-select {
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(235, 237, 240);
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 70px;
+    cursor: pointer;
+}
+
+.box-select p {
+
+}
+
+/* End box select */
+
+/* box select2 */
+
+.box-select2 {
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(235, 237, 240);
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 70px;
+    cursor: pointer;
+}
+
+.box-select2 .box-select2-title {
+    font-size: 14px;
+    color: rgb(77, 97, 130);
+    transition: all 0.2s ease 0s;
+    font-weight: 600;
+    line-height: 1.57;
+    letter-spacing: -0.35px;
+}
+
+.box-select2 .box-select2-words {
+    color: rgb(102, 120, 147);
+    font-size: 12px;
+    font-style: italic;
+    transition: all 0.2s ease 0s;
+    margin-top: 2px;
+    letter-spacing: -0.34px;
+}
+
+/* End box select2 */

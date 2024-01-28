@@ -1,0 +1,227 @@
+.search-cv {
+    position: relative;
+}
+
+.search-cv-top {
+    height: 150px;
+    position: absolute;
+    top: -32px;
+    left: -388px;
+    width: 167%;
+    background: rgb(0, 70, 178);
+    z-index: -1;
+}
+
+.top-title-tips {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+
+.top-title-tips .title {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.top-title-tips .tips {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top-title-tips .tips svg {
+
+}
+
+.top-title-tips .tips p {
+
+}
+
+.top-search {
+    width: 800px;
+    height: 35px;
+    margin: auto;
+    position: relative;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(9, 30, 66, 0.31) 0px 0px 1px 0px, rgba(9, 30, 66, 0.25) 0px 8px 16px -4px;
+    border-radius: 10px;
+    top: 45px;
+    margin-bottom: 6rem;
+}
+
+.top-search svg {
+    position: absolute;
+    top: 50%;
+    left: 55px;
+    transform: translate(-50%,-50%);
+}
+
+.top-search input {
+    color: rgb(13, 41, 85);
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    width: 86%;
+    height: 18px;
+    letter-spacing: -0.47px;
+    line-height: 20px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    padding: 10px 8px 10px 32px;
+    font-size: 16px;
+}
+
+.top-search button {
+    position: absolute;
+    top: 52px;
+    right: -10px;
+    transform: translate(-50%,-50%);
+}
+
+.search-cv-tips {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    background: rgb(240, 245, 255);
+    border: 1px solid rgb(217, 221, 228);
+    padding: 1rem;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.search-cv-tips-above {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-cv-tips-above-title {
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 20px;
+    margin-right: 4px;
+    border-radius: 2px;
+    max-width: 196px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+    padding: 2px 4px;
+    background-color: rgb(230, 239, 255);
+    color: rgb(0, 50, 127);
+}
+
+.search-cv-tips-above-hide {
+    color: rgb(0, 20, 51);
+    font-size: 12px;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    margin: 0px 8px;
+    cursor: pointer;
+    padding: 0px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.search-cv-tips-the-tip {
+    margin-right: 16px;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    max-width: 615px;
+    margin-left: 0px;
+}
+
+.search-cv-tips-switch {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+}
+
+.search-cv-tips-switch svg {
+
+}
+
+.search-cv-recent-session {
+    width: 75%;
+    margin: auto;
+}
+
+.search-cv-recent-session-p {
+    color: rgb(0, 20, 51);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.search-cv-recent-session-boxs {
+
+}
+
+.search-cv-recent-session-boxs .box {
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(235, 237, 240);
+    line-height: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    user-select: none;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+    text-align: center;
+    max-width: 180px;
+    min-height: 66px;
+    padding: 12px;
+    min-width: 200px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.search-cv-recent-session-boxs .box:hover {
+    background-color: rgb(245, 246, 247);
+    border-color: rgb(204, 210, 219);
+}
+
+.search-cv-recent-session-boxs .box .searched {
+    font-size: 14px;
+    color: rgb(77, 97, 130);
+    transition: all 0.2s ease 0s;
+    font-weight: 600;
+    line-height: 1.57;
+    letter-spacing: -0.35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.search-cv-recent-session-boxs .box .time {
+    color: rgb(102, 120, 147);
+    font-size: 12px;
+    font-style: italic;
+    transition: all 0.2s ease 0s;
+    margin-top: 2px;
+    letter-spacing: -0.34px;
+}

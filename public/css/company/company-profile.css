@@ -1,0 +1,460 @@
+.company-profile {
+
+}
+
+.company-profile-header {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(217, 221, 228);
+    position: relative;
+}
+
+.company-profile-header-cover {
+    height: 195px;
+    width: 100%;
+    background-color: rgb(64, 86, 120);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.company-profile-header-cover-title {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    margin-bottom: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.photo-help {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.optimal {
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+}
+
+.company-profile-header-data {
+
+}
+
+.company-profile-header-data-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-profile-header-data-pic-info {
+    display: flex;
+    position: relative;
+    top: -55px;
+    left: 35px;
+}
+
+.company-profile-header-data-pic-info-pic {
+    position: relative;
+    width: 220px;
+    height: 185px;
+}
+
+.company-profile-header-data-pic-info-pic img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.company-profile-header-data-pic-info-pic svg {
+    width: 36px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid rgb(217, 221, 228);
+    position: absolute;
+    bottom: -5px;
+    right: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.company-profile-header-data-pic-info-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.company-profile-header-data-pic-info-data-top {
+    display: flex;
+    align-items: center;
+}
+
+.company-profile-header-data-pic-info-data-name {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+}
+
+.company-profile-header-data-pic-info-data-edit {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    height: 30px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    line-height: 22px;
+    color: rgb(77, 97, 130);
+    background-color: transparent;
+    margin-left: 4px;
+}
+
+.company-profile-header-data-pic-info-data-edit:hover {
+    background-color: rgb(235, 237, 240);
+}
+
+.company-profile-header-data-pic-info-data-loc {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    color: rgb(77, 97, 130);
+    margin: 8px 0px 0px;
+    max-width: 464px;
+}
+
+.company-profile-header-data-share {
+
+}
+
+.company-profile-header-data-share button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 32px;
+    line-height: 22px;
+    color: rgb(0, 85, 217);
+    background-color: transparent;
+    margin: 1rem;
+}
+
+.company-profile-header-data-share button:hover {
+    background-color: rgb(230, 239, 255);
+}
+
+.company-profile-header-data-titles {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -35px;
+    left: 40px;
+}
+
+.company-profile-header-data-titles .profile {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    padding: 13px 22px;
+    color: rgb(0, 85, 217);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.47px;
+    line-height: 13px;
+    text-decoration: none;
+    border-bottom: solid 2px rgb(0, 85, 217);
+}
+
+.company-profile-header-data-titles .jobs {
+
+}
+
+/* profile content */
+
+.company-profile-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+}
+
+.company-profile-content-tips {
+    width: 37%;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 1rem;
+}
+
+.company-profile-content-tips-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.company-profile-content-tips-title h2 {
+
+}
+
+.company-profile-content-tips-title svg {
+
+}
+
+.company-profile-content-tips-text {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    color: rgb(77, 97, 130);
+    margin: 0px 0px 16px;
+}
+
+.company-profile-content-tips-button {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(0, 85, 217);
+    background-color: rgb(217, 232, 255);
+    width: 100%;
+}
+
+.company-profile-content-tips-button:hover {
+    background-color: rgb(204, 224, 255);
+}
+
+.company-profile-content-company {
+    width: 100%;
+    padding: 1rem;
+    align-items: start;
+}
+
+.company-profile-content-company .company-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-profile-content-company .company-profile-titel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-profile-content-company .company-profile h2 {
+
+}
+
+.company-profile-content-company .company-profile button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    height: 35px;
+    line-height: 22px;
+    color: rgb(77, 97, 130);
+    background-color: rgb(235, 237, 240);
+}
+
+.company-profile-content-company .company-profile button:hover {
+    background-color: rgb(217, 221, 228);
+}
+
+.company-profile .company-profile {
+
+}
+
+.company-profile .company-profile-data {
+    width: 100%;
+    display: flex;
+}
+
+.company-profile .company-profile-data div {
+    width: 50%;
+    color: rgb(77, 97, 130);
+}
+
+.company-profile .company-profile-data div div {
+    padding: 1rem;
+}
+
+.company-profile .company-profile-data div div span {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    margin-left: 4px;
+    display: inline-block;
+    max-width: 254px;
+}
+
+
+.company-profile .company-profile-data .location {
+
+}
+
+.company-profile .company-profile-data .industry {
+
+}
+
+.company-profile .company-profile-data .sompany-size {
+
+}
+
+.company-profile .company-profile-data .founded {
+
+}
+
+.company-profile .company-profile-data .specialities {
+    
+}
+
+.company-profile-content-company .company-profile-description {
+    width: 90%;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 4px;
+    margin-top: 24px;
+    padding: 24px;
+    text-align: center;
+}
+
+.company-profile-content-company .company-profile-description svg {
+
+}
+
+.company-profile-content-company .company-profile-description h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    /* margin: 12px 0px; */
+}
+
+.company-profile-content-company .company-profile-description p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    line-height: 27px;
+    color: rgb(77, 97, 130);
+    /* margin: 0px 0px 24px; */
+    font-style: italic;
+}
+
+.company-profile-content-company .company-profile-description button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    min-width: 80px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    min-height: 40px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 85, 217);
+}
+
+.company-profile-content-company .company-profile-description button:hover {
+    background-color: rgb(0, 70, 178);
+}
+
+.company-profile-vacancies {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-profile-vacancies svg {
+
+}
+
+.company-profile-vacancies h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    line-height: 29px;
+    margin: 12px 0px;
+}
+
+.company-profile-vacancies p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    line-height: 27px;
+    color: rgb(77, 97, 130);
+    margin: 0px auto;
+    font-style: italic;
+    max-width: 374px;
+}

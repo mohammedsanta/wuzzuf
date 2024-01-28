@@ -44,6 +44,40 @@ Route::post('/job',[JobController::class,'store'])->name('job.store')->middlewar
 
 // Start Company Profile
 
+// 
+
+Route::get('/dashboard',[CompanyController::class,'dashboard'])->name('company.dashboard');
+
+// Start Posts
+
+Route::get('/posts/jobs',[CompanyController::class,'postsJobs'])->name('company.postsJobs');
+Route::get('/posts/internships',[CompanyController::class,'postsInternships'])->name('company.internships');
+Route::get('/search/jobs',[CompanyController::class,'searchJob'])->name('company.searchJob');
+Route::get('/post/job',[CompanyController::class,'postJob'])->name('company.postJob');
+Route::get('/post/internship',[CompanyController::class,'postInternship'])->name('company.postInternship');
+
+// End Posts
+
+// Start candidates
+
+Route::get('/search/talens',[CompanyController::class,'searchCvs'])->name('company.searchCvs');
+Route::get('/talents/unlocked',[CompanyController::class,'unblockCandidates'])->name('company.unblockCandidates');
+Route::get('/company/folders',[CompanyController::class,'folders'])->name('company.folders');
+Route::get('/company/job-invitations',[CompanyController::class,'jobInvitations'])->name('company.jobInvitations');
+Route::get('/badges',[CompanyController::class,'badges'])->name('company.badges');
+
+
+// End candidates
+
+// Start Company Profile
+Route::get('/jobs/careers',[CompanyController::class,'careers'])->name('company.careers');
+// End Company Profile
+
+Route::get('/company/users',[CompanyController::class,'users'])->name('company.users');
+Route::get('/company/subaccount',[CompanyController::class,'subAccount'])->name('company.subAccount');
+
+// 
+
 Route::get('/company/profile',[CompanySettings::class,'profile'])->name('company.profile')->middleware('auth:company');
 Route::post('/company/profile',[CompanySettings::class,'companyProfile'])->name('company.profile.post')->middleware('auth:company');
 Route::get('/company/settings',[CompanySettings::class,'companySettings'])->name('company.settings')->middleware('auth:company');

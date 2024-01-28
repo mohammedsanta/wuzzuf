@@ -18,6 +18,93 @@ class CompanyController extends Controller
     }
 
     /**
+     * Display a Dashboard
+     */
+    public function dashboard()
+    {
+        return view('company.dashboard');
+    }
+    
+    /**
+     * Display a Manage posts jobs
+     */
+    public function postsJobs()
+    {
+        return view('company.posts.jobs-manage');
+    }
+
+    /**
+     * Display a Manage posts internships
+     */
+    public function postsInternships()
+    {
+        return view('company.posts.internships-manage');
+    }
+
+    public function searchJob()
+    {
+        return view('company.posts.search-job');
+    }
+
+    public function postJob()
+    {
+        return view('company.posts.create-job');
+    }
+
+    public function postInternship()
+    {
+        return view('company.posts.create-internshipt');
+    }
+
+    public function users()
+    {
+        return view('company.users');
+    }
+
+    public function subAccount()
+    {
+        return view('company.sub-account');
+    }
+
+    // Start Candidates
+
+    public function searchCvs()
+    {
+        return view('company.candidates.search-cvs');
+    }
+
+    public function unblockCandidates()
+    {
+        return view('company.candidates.unblock-candidates');
+    }
+
+    public function folders()
+    {
+        return view('company.candidates.folders');
+    }
+
+    public function jobInvitations()
+    {
+        return view('company.candidates.job-invitations');
+    }
+
+    public function badges()
+    {
+        return view('company.candidates.badges');
+    }
+    
+    // End Candidates
+
+    // Start Company Profile
+
+    public function careers()
+    {
+        return view('company.profile');
+    }
+
+    // End Company Profile
+
+    /**
      * Show the form for creating a new resource.
      */
     public function create()

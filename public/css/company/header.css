@@ -1,0 +1,282 @@
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+}
+
+.header-container {
+    display: flex;
+    width: 55%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-logo {
+    font-size: 15px;
+    color: #1d1dd3;
+}
+
+.header-pages {
+    display: flex;
+    align-items: center;
+}
+
+.header-pages .page,
+.header-pages .page-menu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 60px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(0, 20, 51);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 3px solid transparent;
+    outline: none;
+    background: none;
+    font-weight: 600;
+    padding: 0px 16px;
+    z-index: 1;
+}
+
+.header-pages .page a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-pages .page-avtive {
+    border-color: rgb(0, 85, 217);
+    color: rgb(0, 85, 217);
+}
+
+
+.header-pages .page-menu {
+
+}
+
+.header-pages .page-menu .page-menu-pages {
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 64px;
+    border: 1px solid rgb(217, 221, 228);
+    display: none;
+    flex-direction: column;
+}
+
+.header-pages .page-menu:hover .page-menu-pages {
+    display: flex;
+}
+
+.header-pages .page-menu .page-menu-pages a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.header-pages .page-menu .page-menu-pages a:hover {
+    background: rgb(230, 239, 255);
+}
+
+.header-search {
+    display: flex;
+}
+
+.header-search button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid rgb(217, 221, 228);
+    border-right: 1px solid rgb(217, 221, 228);
+    border-bottom: 1px solid rgb(217, 221, 228);
+    border-radius: 0px 2px 2px 0px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s;
+    line-height: 32px;
+    color: rgb(77, 97, 130);
+    background-color: rgb(235, 237, 240);
+    min-height: auto;
+    min-width: auto;
+    padding: 8px;
+    width: auto;
+    height: 32px;
+    border-left: none;
+    margin-left: 0px;
+}
+
+.header-search input {
+    color: rgb(13, 41, 85);
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px 0px 0px 2px;
+    width: 100%;
+    letter-spacing: -0.47px;
+    line-height: 20px;
+    font-size: 15px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    padding: 10px 8px;
+    height: 32px;
+}
+
+.email-alert {
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    color: rgb(127, 85, 0);
+    background-color: rgb(255, 246, 230);
+    border-color: rgb(255, 229, 179);
+    margin-bottom: 0px;
+    border-radius: 0px;
+    text-align: center;
+    line-height: 19px;
+    padding: 8px;
+}
+
+/* User Menu */
+
+.header-user-menu {
+    position: relative;
+}
+
+.user-menu {
+    position: absolute;
+    top: 42px;
+    right: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
+    user-select: none;
+    overflow-y: auto;
+    max-height: 80vh;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+.user-menu-hr {
+    height: 0px;
+    margin: 8px 0px;
+    overflow: hidden;
+    border-top: 1px solid rgb(217, 221, 228);
+}
+
+.user-menu-user-data {
+    display: flex;
+    gap: 5px;
+    padding: 1rem;
+}
+
+.user-menu-user-data-pic {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 30, 76);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.user-menu-user-data-pic-name {
+
+}
+
+.user-menu-user-data-some-data {
+
+}
+
+.user-menu-user-data-some-data p {
+    margin: 0;
+}
+
+.user-menu-user-data-some-data-full-name {
+    white-space: nowrap;
+    color: rgb(0, 20, 51);
+    overflow: hidden;
+    max-width: 95%;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+}
+
+.user-menu-user-data-some-data-first-name {
+    white-space: nowrap;
+    color: rgb(0, 20, 51);
+    overflow: hidden;
+    max-width: 95%;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+}
+
+.user-menu-user-data-some-data-email {
+    width: 160px;
+    max-width: 95%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.34px;
+    color: rgb(128, 142, 165);
+}
+
+.user-menu-page {
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    font-family: "Open Sans";
+    letter-spacing: -0.44px;
+    line-height: 21px;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 0px;
+}
+
+.user-menu-page-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-menu-page-container a:hover {
+    background: rgb(230, 239, 255);
+}
+
+.user-menu-page a {
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    font-family: "Open Sans";
+    letter-spacing: -0.44px;
+    line-height: 21px;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.user-menu-page-title {
+    color: rgb(128, 142, 165);
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+

@@ -1,0 +1,79 @@
+.managing {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 700px;
+    border: 1px solid rgb(217, 221, 228);
+    margin-top: 2rem;
+}
+
+.managing-links {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.managing-link-non-active {
+    padding: 20px 12px;
+    width: 50%;
+    border-top: 1px solid rgb(217, 221, 228);
+    border-bottom: 1px solid rgb(217, 221, 228);
+    border-left: 1px solid rgb(217, 221, 228);
+    background-color: rgb(235, 237, 240);
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+.managing-link-active {
+    padding: 25.5px 12px;
+    border-bottom: none;
+    border-top: 1px solid rgb(217, 221, 228);
+    border-right: 1px solid rgb(217, 221, 228);
+    border-left: 1px solid rgb(217, 221, 228);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 85, 217);
+    cursor: auto;
+    width: 50%;
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.managing-jobs {
+
+}
+
+.managing-jobs-no-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.managing-jobs-no-content img {
+
+}
+
+.managing-jobs-no-content p {
+    margin-bottom: 12px;
+    margin-top: 24px;
+    color: rgb(77, 97, 130);
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    line-height: 28px;
+}
+
+.managing-jobs-no-content button {
+
+}
+
+/* Internships */
+
