@@ -1,3 +1,43 @@
+/* livewire */
+
+.job-type-selected {
+    border: 1px solid rgb(77, 147, 255);
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    user-select: none;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+    text-align: center;
+    max-width: 180px;
+    padding: 12px;
+    background: rgb(230, 239, 255);
+    height: 50px;
+    min-width: unset;
+    margin-bottom: 8px;
+}
+
+.CareerLevelSelected {
+    border: 1px solid rgb(77, 147, 255);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    border-radius: 2px;
+    max-width: 180px;
+    min-height: 66px;
+    background: rgb(230, 239, 255);
+    margin-bottom: 8px;
+}
+
+/* end livewire */
+
 .post-job {
     width: 80%;
     display: flex;
@@ -157,6 +197,23 @@
     gap: 10px;
 }
 
+.types-job label {
+    color: rgb(0, 20, 51);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.86px;
+    margin-top: 1rem;
+}
+
+.types-job label span {
+    color: rgb(128, 142, 165);
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    line-height: 20px;
+    margin-left: 5px;
+}
 
 
 .box-job-details {
@@ -187,12 +244,25 @@
 }
 
 .type-true {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 2px;
+    border: 1px solid rgb(77, 147, 255);
+    margin-bottom: 8px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease 0s;
+    font-size: 15px;
+    padding: 8px 12px 9px;
+    cursor: pointer;
+    text-align: left;
     background-color: rgb(230, 239, 255);
-    border-color: rgb(77, 147, 255);
     color: rgb(0, 85, 217);
 }
 
-.job-category {
+.line {
     padding-bottom: 24px;
     border-bottom: 1px solid rgb(235, 237, 240);
 }

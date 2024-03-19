@@ -4,9 +4,9 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    height: 700px;
     border: 1px solid rgb(217, 221, 228);
     margin-top: 2rem;
+    padding: 2rem;
 }
 
 .managing-links {
@@ -49,7 +49,7 @@
 }
 
 .managing-jobs {
-
+    width: 100%;
 }
 
 .managing-jobs-no-content {
@@ -74,6 +74,332 @@
 .managing-jobs-no-content button {
 
 }
+
+/* search bar */
+
+.managing-jobs-search-bar {
+
+}
+
+.managing-jobs-search-bar-box {
+
+}
+
+.managing-jobs-search-bar-box input {
+    height: 30px;
+    padding-right: 45px;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.managing-jobs-between {
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(217, 221, 228);
+    /* border-right: 1px solid rgb(217, 221, 228); */
+    /* border-left: 1px solid rgb(217, 221, 228); */
+    border-bottom: 1px solid rgb(217, 221, 228);
+    border-image: initial;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    margin-top: 3rem;
+    width: 100%;
+    height: 4rem;
+}
+
+
+
+.managing-jobs-search-bar-box svg {
+
+}
+
+/* end search */
+
+/* boxs */
+
+.managing-jobs-boxs {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.managing-jobs-boxs .box {
+    width: 80%;
+    height: 10rem;
+    background: rgb(252, 253, 255);
+    border: 1px solid rgb(191, 216, 255);
+    display: flex;
+}
+
+/* right */
+
+.box .box-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.box .box-right .title-type {
+    text-decoration: none;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    word-break: break-word;
+    display: inline;
+    margin: 0px 4px 0px 0px;
+}
+
+.box .box-right .title-type span {
+    align-items: center;
+    margin-right: 4px;
+    border-radius: 2px;
+    max-width: 196px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    text-overflow: ellipsis;
+    background-color: rgb(235, 237, 240);
+    color: rgb(0, 20, 51);
+    display: inline;
+    font-size: 10px;
+    line-height: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: inherit;
+    min-height: 18px;
+    padding: 2px 4px;
+}
+
+.box .box-right .location {
+    color: rgb(77, 97, 130);
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.box .box-right .created {
+    margin-right: 4px;
+    color: rgb(77, 97, 130);
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.box .box-right .views-applicants {
+    color: rgb(77, 97, 130);
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+/* button */
+
+.box-edit {
+    background-color: rgb(245, 248, 255);
+    border: 1px solid rgb(217, 232, 255);
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.box-edit:hover .box-edit-show {
+    display: flex;
+}
+
+.box-edit-show {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
+    border-radius: 3px;
+    user-select: none;
+    width: 115px;
+    position: absolute;
+    top: 34px;
+    left: -1px;
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.box-edit-show a {
+    color: rgb(0, 20, 51);
+    font-size: 17px;
+    font-family: "Open Sans";
+    letter-spacing: -0.44px;
+    line-height: 21px;
+    padding: 8px 12px 7px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.box-edit-show a:hover {
+    background: rgb(230, 239, 255);
+}
+
+.box-edit-show .delete {
+    border-top: 1px solid rgb(235, 237, 240);
+}
+
+/* end button */
+
+/* left */
+
+.box-left {
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.box-left-links {
+    display: flex;
+    border: 1px solid rgb(217, 221, 228);
+    background-color: rgb(255, 255, 255);
+}
+
+/* box links  */
+
+.box-left-links .inbox:hover {
+    background: rgb(217, 232, 255);
+}
+
+.box-left-links .ok:hover,
+.box-left-links .shortlisted:hover,
+.box-left-links .--:hover
+{
+    background: rgb(224, 242, 235);
+}
+
+.box-left-links .hired:hover {
+    background: rgb(255, 247, 217);
+}
+
+.box-left-links .inbox,
+.box-left-links .ok,
+.box-left-links .shortlisted,
+.box-left-links .--
+{
+    position: relative;
+    width: 80px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    gap: 1rem;
+}
+
+.box-left-links .inbox::after,
+.box-left-links .ok:after,
+.box-left-links .shortlisted::after,
+.box-left-links .--::after
+ {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    right: -11.8px;
+    border-left: 12px solid rgb(255, 255, 255);
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
+    z-index: 1;
+}
+
+.box-left-links .inbox::before,
+.box-left-links .ok::before,
+.box-left-links .shortlisted::before,
+.box-left-links .--::before
+ {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 104.8px;
+    border-left: 12px solid rgb(217, 221, 228);
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
+}
+
+/* end box links */
+
+.box-left-links .link {
+    position: relative;
+    width: 80px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    gap: 1rem;
+}
+
+.box-left-links .hired {
+    width: 80px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    gap: 1rem;
+}
+
+.box-left-links .link::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    right: -11.8px;
+    border-left: 12px solid rgb(255, 255, 255);
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
+    z-index: 1;
+}
+
+.box-left-links .link::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    left: 104.8px;
+    border-left: 12px solid rgb(217, 221, 228);
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
+}
+.box-left-links .link .link-top {
+    display: flex;
+    gap: 2rem;
+}
+
+.box-left-links .link span {
+
+}
+
+.box-left-links .link svg {
+
+}
+
+.box-left-links .link .link-down {
+
+}
+
+/* end boxs */
 
 /* Internships */
 

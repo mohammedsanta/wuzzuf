@@ -44,13 +44,18 @@ class JobController extends Controller
         return view('archive');
     }
 
-    public function question($id)
+    // public function question($id)
+    // {
+    //     $job = Job::find($id);
+    //     return view('job.jobQuestion',[
+    //         'job' => $job,
+    //         'questions' => $job->question()->get()
+    //     ]);
+    // }
+
+    public function viewcreateQuestion()
     {
-        $job = Job::find($id);
-        return view('job.jobQuestion',[
-            'job' => $job,
-            'questions' => $job->question()->get()
-        ]);
+        return view('company.createJob.createQuestionsOfJob');
     }
 
     public function applicationPost()
@@ -103,6 +108,8 @@ class JobController extends Controller
      */
     public function create()
     {
+        // old view
+        // return view('job.create-job');
         return view('job.create-job');
     }
 
@@ -112,6 +119,8 @@ class JobController extends Controller
     public function store(JobRequest $request,JobDetailsRequest $requestJobDetails)
     {
         // create job and his details
+
+        dd(request()->all());
 
         $companyId = Auth::guard('company')->user()->id;
 
@@ -169,7 +178,7 @@ class JobController extends Controller
             return redirect("job/question/create/$createdJob->id");
         }
 
-        return redirect('/job');
+        return redirect('/posts/jobs');
     }
 
     public function questionView($id)

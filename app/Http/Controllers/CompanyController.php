@@ -142,7 +142,7 @@ class CompanyController extends Controller
             
             session()->regenerate();
 
-            return Redirect('/job');
+            return Redirect('/dashboard');
         }
 
         return back()->withErrors(['email' => 'Wrong Credentials']);

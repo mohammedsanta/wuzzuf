@@ -23,7 +23,7 @@ class JobRequest extends FormRequest
     {
         return [
             'job' => ['required'],
-            'JobType' => ['required'],
+            'JobType' => [],
             'descriptions' => ['required'],
             'requirements' => ['required'],
         ];

@@ -38,7 +38,7 @@ Route::get('/company/create',[CompanyController::class,'create'])->name('company
 Route::post('/company/create',[CompanyController::class,'store'])->name('company.store')->middleware('guest:web,company');
 Route::post('/company/login',[CompanyController::class,'login'])->name('company.login')->middleware('guest:web,company');
 Route::post('/company/logout',[CompanyController::class,'logout'])->name('company.logout')->middleware('auth:company');
-Route::get('/job/create',[JobController::class,'create'])->name('job.create')->middleware('auth:company');
+// Route::get('/job/create',[JobController::class,'create'])->name('job.create')->middleware('auth:company');
 Route::get('/job/ourjobs',[JobController::class,'ourjobs'])->name('job.ourjobs')->middleware('auth:company');
 Route::post('/job',[JobController::class,'store'])->name('job.store')->middleware('auth:company');
 
@@ -54,6 +54,8 @@ Route::get('/posts/jobs',[CompanyController::class,'postsJobs'])->name('company.
 Route::get('/posts/internships',[CompanyController::class,'postsInternships'])->name('company.internships');
 Route::get('/search/jobs',[CompanyController::class,'searchJob'])->name('company.searchJob');
 Route::get('/post/job',[CompanyController::class,'postJob'])->name('company.postJob');
+Route::post('/post/job',[jobController::class,'store'])->name('company.storeJob');
+Route::get('/job/create/questions/',[jobController::class,'viewcreateQuestion'])->name('job.view.create.question');
 Route::get('/post/internship',[CompanyController::class,'postInternship'])->name('company.postInternship');
 
 // End Posts
