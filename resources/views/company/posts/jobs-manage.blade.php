@@ -52,18 +52,104 @@
 
             </div>
 
-            <div class="managing-jobs-between"></div>
+            <div class="managing-jobs-draft-jobs">
+
+                <span class="managing-jobs-draft-jobs-title">
+
+                    draft jobs (1)
+                
+                    <svg width="12" height="12" preserveAspectRatio="none" viewBox="0 0 24 24">
+                        <path fill="#4D6182" d="M17.355 7.5L12 13.063 6.645 7.5 5 9.213l7 7.287 7-7.287z"></path>
+                    </svg>
+                    
+                </span>
+
+                <div class="managing-jobs-draft-jobs-boxs">
+
+                    @foreach($data['drafts'] as $item)
+
+                        <div class="box">
+
+                            <div class="box-about-job">
+
+                                <p class="box-about-job-title">web</p>
+
+                                <div class="box-about-job-info">
+
+                                    <p class="information">Alexandria, Egypt · Remote · Full Time · Part Time · Freelance / Project · 1 Vacancy</p>
+
+                                    <p class="date-created">Created 2 minutes ago by You</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="box-actions">
+
+                                <div class="action">
+
+                                    <svg width="20" height="20" preserveAspectRatio="none" viewBox="0 0 24 24">
+                                        <path fill="#667893" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                                    </svg>
+
+                                    <p>Edit</p>
+
+                                </div>
+
+                                <div class="action">
+
+                                    <svg width="20" height="20" preserveAspectRatio="none" viewBox="0 0 24 24">
+                                        <path fill="#667893" d="M18.933 7.438a.456.456 0 01.067.187.456.456 0 01-.067.188l-8.38 10c-.135.125-.236.187-.303.187-.112 0-.224-.052-.337-.156l-4.745-4.25-.1-.094A.456.456 0 015 13.312c0-.02.022-.072.067-.156l.068-.062a63.944 63.944 0 011.48-1.438c.135-.125.225-.187.27-.187.09 0 .202.062.336.187l2.692 2.438 6.731-8.031c.045-.042.112-.063.202-.063.067 0 .146.02.236.063l1.85 1.375z"></path>
+                                    </svg>
+
+                                    <p>Activate</p>
+
+                                </div>
+
+                                <div class="action">
+
+                                    <p>Clone</p>
+
+                                    <svg width="20" height="20" preserveAspectRatio="none" viewBox="0 0 24 24">
+                                        <path fill="#667893" d="M15.257 4.5H6.894c-.767 0-1.394.623-1.394 1.385v9.692h1.394V5.885h8.363V4.5zm1.85 2.538H9.44c-.766 0-1.394.624-1.394 1.385v9.692c0 .762.628 1.385 1.394 1.385h7.666c.767 0 1.394-.623 1.394-1.385V8.423c0-.761-.627-1.385-1.394-1.385zm0 11.077H9.44V8.423h7.666v9.692z"></path>
+                                    </svg>
+
+                                </div>
+
+                                <div class="action">
+
+                                    <svg width="20" height="20" preserveAspectRatio="none" viewBox="0 0 24 24">
+                                        <path fill="#667893" d="M19 3.984V6H5V3.984h3.488L9.522 3h4.98l1.034.984H19zm-13.014 15v-12h12.028v12c0 .544-.2 1.016-.602 1.416-.4.4-.874.6-1.419.6H8.007c-.545 0-1.018-.2-1.42-.6-.4-.4-.6-.872-.6-1.416z"></path>
+                                    </svg>
+
+                                    <p>Delete</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    @endforeach
+
+                </div>
+
+                <button class="managing-jobs-draft-jobs-show-more">Show More Draft Jobs</button>
+
+            </div>
+
+            <!-- <div class="managing-jobs-between"></div> -->
 
             <div class="managing-jobs-boxs">
 
-                @foreach(['','',''] as $item)
+                @foreach($data['jobs'] as $item)
 
                 <div class="box">
 
                     <div class="box-right">
 
-                        <div class="title-type">web <span>Part Time</span></div>
-                        <div class="location">Aswan , Egypt · 1 Vacancy</div>
+                        <div class="title-type">{{$item->job}}<span>{{$item->JobType}}</span></div>
+                        <div class="location">{{auth()->user('company')->location()->get()[0]->Country}} , {{auth()->user('company')->location()->get()[0]->City}} · 1 Vacancy</div>
                         <div class="created">Created 16 minutes ago by You</div>
                         <div class="views-applicants">0 Job Views · 0 Total Applicants</div>
 

@@ -50,12 +50,14 @@ Route::get('/dashboard',[CompanyController::class,'dashboard'])->name('company.d
 
 // Start Posts
 
-Route::get('/posts/jobs',[CompanyController::class,'postsJobs'])->name('company.postsJobs');
+// for company
+
+Route::get('/posts/jobs',[CompanyController::class,'postsJobs'])->name('company.postsJobs')->middleware('auth:company');
 Route::get('/posts/internships',[CompanyController::class,'postsInternships'])->name('company.internships');
 Route::get('/search/jobs',[CompanyController::class,'searchJob'])->name('company.searchJob');
 Route::get('/post/job',[CompanyController::class,'postJob'])->name('company.postJob');
 Route::post('/post/job',[jobController::class,'store'])->name('company.storeJob');
-Route::get('/job/create/questions/',[jobController::class,'viewcreateQuestion'])->name('job.view.create.question');
+Route::get('/job/create/additional-info/{id}',[jobController::class,'viewcreateQuestion'])->name('job.view.create.question');
 Route::get('/post/internship',[CompanyController::class,'postInternship'])->name('company.postInternship');
 
 // End Posts

@@ -116,6 +116,144 @@
 
 /* end search */
 
+/* start draft */
+
+.managing-jobs-draft-jobs {
+    border-top: 1px solid rgb(217, 221, 228);
+    border-bottom: 1px solid rgb(217, 221, 228);
+    margin-top: 3rem;
+    position: relative;
+}
+
+.managing-jobs-draft-jobs-title {
+    color: rgb(77, 97, 130);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    bottom: 19px;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.managing-jobs-draft-jobs-boxs {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.managing-jobs-draft-jobs-boxs .box {
+    width: 100%;
+    margin-bottom: 12px;
+    background: rgb(255, 251, 243);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgb(255, 230, 128);
+    border-radius: 2px;
+    padding: 15px 20px;
+    margin-top: 1rem;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-about-job {
+    display: flex;
+    flex-direction: column;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-about-job p {
+    margin: 0;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-about-job .box-about-job-title {
+    text-decoration: none;
+    color: rgb(0, 20, 51);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    word-break: break-word;
+    display: inline;
+    margin: 0px 4px 0px 0px;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-about-job .box-about-job-info {
+    color: rgb(77, 97, 130);
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-about-job .box-about-job-info .information {
+    margin: 8px 0;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-about-job .box-about-job-info .date-created {
+
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+    border-top: 1px solid rgb(217, 221, 228);
+    position: relative;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-actions p {
+    margin: 0;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-actions .action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-actions .action p {
+
+}
+
+.managing-jobs-draft-jobs-boxs .box .box-actions .action svg {
+
+}
+
+.managing-jobs-draft-jobs-show-more {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(204, 224, 255);
+    border-radius: 2px;
+    background-color: rgb(235, 242, 255);
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.47px;
+    color: rgb(0, 85, 217);
+    text-transform: capitalize;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: auto;
+    margin-bottom: 2rem;
+}
+
+.managing-jobs-draft-jobs-show-more:hover {
+    cursor: pointer;
+    border-color: rgb(191, 216, 255);
+    background-color: rgb(230, 239, 255);
+}
+
+/* end draft */
+
 /* boxs */
 
 .managing-jobs-boxs {

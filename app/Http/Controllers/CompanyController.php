@@ -30,7 +30,25 @@ class CompanyController extends Controller
      */
     public function postsJobs()
     {
-        return view('company.posts.jobs-manage');
+
+        
+        $jobs = auth()->user()->Jobs()->get();
+        // dd($jobs);
+        $data = [];
+
+        foreach($jobs as $job) {
+            if(count($job->jobDetails()->get())) {
+                $data['jobs'][] = $job;
+            } else {
+                // if user don't continue the post
+                // post hasn't a additional info
+                $data['drafts'][] = $job; 
+            }
+        }
+
+        return view('company.posts.jobs-manage',[
+            'data' => $data
+        ]);
     }
 
     /**
