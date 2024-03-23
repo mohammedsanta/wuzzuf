@@ -6,6 +6,7 @@ use App\Models\Skill;
 use App\Models\Company;
 use App\Models\JobQuestion;
 use App\Models\DescriptionJob;
+use App\Models\JobAdditionalInfo;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -34,6 +35,11 @@ class Job extends Model
     public function companyAble()
     {
         $this->morphTo();
+    }
+
+    public function additional()
+    {
+        return $this->morphOne(JobAdditionalInfo::class,'jobAddtional');
     }
 
     public function skills() {

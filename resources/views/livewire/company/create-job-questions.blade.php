@@ -13,48 +13,138 @@
 
             <h3>Screening Questions</h3>
 
-            <div class="about-questions-note">
+            @if($note)
 
-                <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg" class="about-questions-note-mic">
-                    <g fill="none" fill-rule="evenodd"><g><circle fill="#267BFF" opacity="0.3" cx="14" cy="14" r="14"></circle><circle fill="#76ACFF" opacity="0.5" cx="14" cy="14" r="11.375"></circle></g>
-                    <path d="M20.23 13.605c.437 0 .772.32.772.74 0 3.435-2.677 6.326-6.229 6.696v1.977h2.806c.437 0 .772.32.772.74s-.335.742-.772.742h-7.156c-.437 0-.772-.321-.772-.741s.335-.741.772-.741h2.806V21.04C9.677 20.671 7 17.78 7 14.346c0-.42.335-.741.772-.741.438 0 .772.32.772.74 0 2.891 2.446 5.239 5.457 5.239 3.011 0 5.457-2.348 5.457-5.238 0-.42.334-.741.772-.741Z" fill="#0055D9" fill-rule="nonzero"></path>
-                    <path d="M14.001 3.5c2.368 0 4.298 1.853 4.298 4.126v6.72c0 2.273-1.93 4.126-4.298 4.126-2.368-.025-4.298-1.853-4.298-4.15V7.625C9.703 5.353 11.633 3.5 14 3.5Z" stroke="#0055D9" stroke-width="0.5" fill="#F0F5FF"></path>
-                    <path d="M15.313 10.5h3.062v.875h-3.063a.437.437 0 1 1 0-.875ZM13.563 14h4.812v.875h-4.813a.437.437 0 1 1 0-.875ZM14.438 12.25h3.937v.875h-3.938a.437.437 0 1 1 0-.875Z" fill="#0055D9"></path></g>
-                </svg>
+                <div class="about-questions-note">
 
-                <p><strong>NEW!</strong> Screen your applicants faster and add <strong>Voice questions</strong> to start receiving audio answers from potential candidates!</p>
+                    <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg" class="about-questions-note-mic">
+                        <g fill="none" fill-rule="evenodd"><g><circle fill="#267BFF" opacity="0.3" cx="14" cy="14" r="14"></circle><circle fill="#76ACFF" opacity="0.5" cx="14" cy="14" r="11.375"></circle></g>
+                        <path d="M20.23 13.605c.437 0 .772.32.772.74 0 3.435-2.677 6.326-6.229 6.696v1.977h2.806c.437 0 .772.32.772.74s-.335.742-.772.742h-7.156c-.437 0-.772-.321-.772-.741s.335-.741.772-.741h2.806V21.04C9.677 20.671 7 17.78 7 14.346c0-.42.335-.741.772-.741.438 0 .772.32.772.74 0 2.891 2.446 5.239 5.457 5.239 3.011 0 5.457-2.348 5.457-5.238 0-.42.334-.741.772-.741Z" fill="#0055D9" fill-rule="nonzero"></path>
+                        <path d="M14.001 3.5c2.368 0 4.298 1.853 4.298 4.126v6.72c0 2.273-1.93 4.126-4.298 4.126-2.368-.025-4.298-1.853-4.298-4.15V7.625C9.703 5.353 11.633 3.5 14 3.5Z" stroke="#0055D9" stroke-width="0.5" fill="#F0F5FF"></path>
+                        <path d="M15.313 10.5h3.062v.875h-3.063a.437.437 0 1 1 0-.875ZM13.563 14h4.812v.875h-4.813a.437.437 0 1 1 0-.875ZM14.438 12.25h3.937v.875h-3.938a.437.437 0 1 1 0-.875Z" fill="#0055D9"></path></g>
+                    </svg>
 
-                <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" class="about-questions-note-x">
-                    <path fill="#00327F" d="M14.238 12L20 17.762 17.763 20 12 14.237 6.238 20 4 17.763 9.764 12 4 6.236l2.236-2.235h.002l5.763 5.762L17.764 4l2.235 2.236v.002L14.238 12z"></path>
-                </svg>
+                    <p><strong>NEW!</strong> Screen your applicants faster and add <strong>Voice questions</strong> to start receiving audio answers from potential candidates!</p>
 
-            </div>
+                    <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" class="about-questions-note-x" wire:click="disappearNote()">
+                        <path fill="#00327F" d="M14.238 12L20 17.762 17.763 20 12 14.237 6.238 20 4 17.763 9.764 12 4 6.236l2.236-2.235h.002l5.763 5.762L17.764 4l2.235 2.236v.002L14.238 12z"></path>
+                    </svg>
+
+                </div>
+
+            @else
+
+                <div class="about-questions-advice">
+
+                    <p class="about-questions-advice-p1">Screen your applicants easily by asking them questions.</p>
+                    <p class="about-questions-advice-p2">Add screening questions to get 5 to 10x better results!</p>
+
+                </div>
+
+            @endif
 
             <div class="questions">
 
-                @foreach($questionsAdded as $question)
+                @foreach($questionsAdded as $number => $question)
 
-                    <div class="question">
+                    @if(!$question['edit'])
 
-                        <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" class="q-style">
-                            <path fill="#001433" d="M10.875 16.25a1.125 1.125 0 110 2.25h-6.75a1.125 1.125 0 110-2.25zm9-3.75a1.125 1.125 0 110 2.25H4.125a1.125 1.125 0 010-2.25zm0-3.75a1.125 1.125 0 010 2.25H4.125a1.125 1.125 0 110-2.25zm0-3.75a1.125 1.125 0 110 2.25H4.125a1.125 1.125 0 110-2.25z"></path>
-                        </svg>
+                        <!-- Start Question -->
 
-                        <p class="ques">What makes you the ideal candidate for this position?</p>
+                        <div class="question">
 
-                        <div class="question-actions">
-
-                            <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24">
-                                <path fill="#4D6182" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                            <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" class="q-style">
+                                <path fill="#001433" d="M10.875 16.25a1.125 1.125 0 110 2.25h-6.75a1.125 1.125 0 110-2.25zm9-3.75a1.125 1.125 0 110 2.25H4.125a1.125 1.125 0 010-2.25zm0-3.75a1.125 1.125 0 010 2.25H4.125a1.125 1.125 0 110-2.25zm0-3.75a1.125 1.125 0 110 2.25H4.125a1.125 1.125 0 110-2.25z"></path>
                             </svg>
 
-                            <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24">
-                                <path fill="#4D6182" d="M19 3.984V6H5V3.984h3.488L9.522 3h4.98l1.034.984H19zm-13.014 15v-12h12.028v12c0 .544-.2 1.016-.602 1.416-.4.4-.874.6-1.419.6H8.007c-.545 0-1.018-.2-1.42-.6-.4-.4-.6-.872-.6-1.416z"></path>
-                            </svg>
+                            <p class="ques">{{$question['question']}}</p>
+
+                            <div class="question-actions">
+
+                                <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" wire:click="appearEditQuestion(`{{$number}}`)">
+                                    <path fill="#4D6182" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+                                </svg>
+
+                                <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" wire:click="deleteQuestionAppearSwitch(`{{$number}}`)">
+                                    <path fill="#4D6182" d="M19 3.984V6H5V3.984h3.488L9.522 3h4.98l1.034.984H19zm-13.014 15v-12h12.028v12c0 .544-.2 1.016-.602 1.416-.4.4-.874.6-1.419.6H8.007c-.545 0-1.018-.2-1.42-.6-.4-.4-.6-.872-.6-1.416z"></path>
+                                </svg>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                    <!-- End Question -->
+
+                    <!-- Start Edit  -->
+
+                    @else
+
+                        <div class="about-questions-add-question">
+
+
+                            <div class="ques-type">
+
+                                <h6 class="ques-type-p">Question type: <span class="try">TRY IT FOR FREE</span></h6>
+
+                            </div>
+
+                            <div class="about-questions-add-buttons">
+
+                                <button class="selected">
+
+                                    <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24" class="svg-selected">
+                                        <path fill="#0055D9" d="M10.875 16.25a1.125 1.125 0 110 2.25h-6.75a1.125 1.125 0 110-2.25zm9-3.75a1.125 1.125 0 110 2.25H4.125a1.125 1.125 0 010-2.25zm0-3.75a1.125 1.125 0 010 2.25H4.125a1.125 1.125 0 110-2.25zm0-3.75a1.125 1.125 0 110 2.25H4.125a1.125 1.125 0 110-2.25z"></path>
+                                    </svg>
+
+                                    Free text
+
+                                </button>
+
+                                <button class="not-selected">
+
+                                    <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24">
+                                        <path fill="#4D6182" d="M5.612 5.652C7.379 3.884 9.509 3 12 3s4.614.877 6.368 2.632C20.123 7.386 21 9.509 21 12c0 2.491-.877 4.614-2.632 6.368C16.614 20.123 14.491 21 12 21c-2.491 0-4.614-.877-6.368-2.632C3.877 16.614 3 14.491 3 12c0-2.491.87-4.607 2.612-6.348zM16.62 8.987c.026-.027.04-.067.04-.12 0-.081-.014-.135-.04-.162l-1.246-.964c-.027-.027-.08-.04-.16-.04-.054 0-.094.013-.121.04l-4.46 5.746a935.15 935.15 0 0 1-1.808-1.728c-.08-.08-.16-.12-.241-.12-.027 0-.08.04-.16.12l-1.046 1.045c-.026.026-.04.08-.04.16 0 .054.014.094.04.12l.08.041a3364.35 3364.35 0 0 1 3.175 3.054c.08.08.147.12.2.12.054 0 .121-.04.202-.12l5.585-7.192z"></path>
+                                    </svg>
+
+                                    Yes/No
+
+                                </button>
+
+                                <button class="not-selected">
+
+                                    <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24">
+                                        <path fill="#4D6182" d="M17.34 11.661c.375 0 .662.275.662.635 0 2.944-2.295 5.422-5.34 5.74v1.693h2.405c.376 0 .662.276.662.636s-.286.635-.662.635H8.934c-.375 0-.662-.275-.662-.635s.287-.636.662-.636h2.405v-1.694C8.294 17.718 6 15.24 6 12.296c0-.36.287-.635.662-.635s.662.275.662.635c0 2.478 2.096 4.49 4.677 4.49 2.581 0 4.677-2.012 4.677-4.49 0-.36.287-.635.662-.635zM12 3c2.03 0 3.685 1.588 3.685 3.536v5.76c0 1.949-1.654 3.537-3.684 3.537-2.03-.021-3.684-1.588-3.684-3.558V6.536C8.317 4.588 9.97 3 12 3z"></path>
+                                    </svg>
+
+                                    Voice
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="the-question">
+
+                                <textarea wire:model="theQuestion" id="" cols="30" rows="10"></textarea>
+
+                                <p class="the-question-count">300</p>
+
+                            </div>
+
+                            <div class="about-questions-add-actions">
+
+                                <button class="blue-button" wire:click="saveEditQuestion({{$number}})">Save</button>
+
+                                <button class="gray-button" wire:click="candelEdit({{$number}})">Cancel</button>
+
+                            </div>
+
+                            
+                        </div>
+
+                    @endif
+
+                    <!-- End Edit -->
 
                 @endforeach
 
@@ -105,7 +195,7 @@
 
                                 <div class="preview-show-questions-question">
 
-                                    <p class="preview-show-questions-p">{{ $ques }}</p>
+                                    <p class="preview-show-questions-p">{{ $ques['question'] }}</p>
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Write your answer here..."></textarea>
 
                                 </div>
@@ -166,7 +256,7 @@
                     
                         <div class="the-question">
 
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea wire:model="theQuestion" id="" cols="30" rows="10"></textarea>
 
                             <p class="the-question-count">300</p>
 
@@ -174,7 +264,16 @@
 
                         <div class="about-questions-add-actions">
 
-                            <button class="blue-button">Save</button>
+                            @if(!$editQuestionButton)
+
+                                <button class="blue-button" wire:click="addQuestionToTable()">Save</button>
+
+                            @else
+
+                                <button class="blue-button" wire:click="editQuestionFromTable()">Save</button>
+
+                            @endif
+
                             <button class="gray-button" wire:click="switchAddQuestion()">Cancel</button>
 
                         </div>
@@ -207,6 +306,23 @@
                     @endif
     
                     <button class="gray-button" wire:click.prevent="previewAppearing()">Preview Question</button>
+
+                </div>
+
+                <div class="about-questions-add-ask-delete-ask {{ $deleteQuestionAppear ? 'about-questions-add-ask-delete-ask-disappear' : '' ;}}">
+
+                    <div class="about-questions-add-ask-delete-container">
+
+                        <p class="about-questions-add-ask-delete-p">Are you sure you want to delete this question?</p>
+
+                        <div class="about-questions-add-ask-delete-actions">
+
+                            <button class="transpare-button" wire:click="deleteQuestionAppearSwitch()">Cancel</button>
+                            <button class="red-button" wire:click="deleteQuestion()">Delete</button>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -300,7 +416,7 @@
 
                 <div class="company-confidential-input">
 
-                    <input type="checkbox" wire:model="KeepCompany">
+                    <input type="checkbox" wire:model="CompanyConfidential">
 
                     <p>Keep company confidential.</p>
 
@@ -314,7 +430,7 @@
 
                 <div class="send-email-input">
 
-                    <input type="checkbox" wire:model="SendNotifications" checked>
+                    <input type="checkbox" wire:model="SendEmail">
 
                     <p>Send me email notifications when there are good candidates.</p>
 
@@ -322,10 +438,10 @@
 
                 <div class="send-email-radio">
 
-                    <input type="radio" wire:model="Daily" checked>
+                    <input type="radio" wire:model="Duration" value="Daily">
                     <label for="">Daily</label>
 
-                    <input type="radio" wire:model="Weekly">
+                    <input type="radio" wire:model="Duration" value="Weekly">
                     <label for="">Weekly</label>
 
                 </div>
@@ -338,11 +454,20 @@
 
                 <div class="email-editor">
 
-                    <p class="email">test@test.test</p>
+                    @if(!$changeEmail)
 
-                    <button>Change Email Address</button>
+                        <p class="email">test@test.test</p>
+
+                        <button wire:click.prevent="switchEmail()">Change Email Address</button>
+
+                    @else
+
+                        <input type="text" class="email-editor-input" wire:model="Email">
+
+                    @endif
 
                 </div>
+
 
             </div>
 
@@ -454,9 +579,9 @@
 
                     <div class="advanced-academic-input">
 
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" wire:model="AcademicExcellence" id="">
 
-                        <p>Keep company confidential.</p>
+                        <p>Academic Excellence is important</p>
 
                     </div>
 

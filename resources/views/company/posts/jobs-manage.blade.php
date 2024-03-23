@@ -176,7 +176,7 @@
 
                         <div class="box-left-links">
 
-                            <a href="" class="inbox">
+                            <a href="{{ route('manage.application.view') }}" class="inbox">
 
                                 <div class="link-top">
                                     <span>--</span>
@@ -196,7 +196,7 @@
                                         <path fill="#001433" d="M10.255 15.596l-.004.004L7.6 12.89l.985-1.006 1.67 1.707L15.35 8.4l.988 1.007L10.26 15.6l-.005-.004z"></path>
                                     </svg>
                                 </div>
-                                <div class="link-down"><span>Inbox</span></div>
+                                <div class="link-down"><span>Ok</span></div>
 
                             </a>
 
@@ -208,7 +208,7 @@
                                         <path fill="#001433" d="M7.955 15.596l-.004.004L5.3 12.89l.985-1.006 1.67 1.707L13.05 8.4l.988 1.007L7.96 15.6l-.005-.004zm4.565-2.01L17.67 8.4l.999 1.007-6.15 6.193-.207-.21-1.714-1.726 1-1.006.922.929z"></path>
                                     </svg>
                                 </div>
-                                <div class="link-down"><span>Inbox</span></div>
+                                <div class="link-down"><span>Shortlisted</span></div>
 
                             </a>
 
@@ -220,7 +220,7 @@
                                         <path fill="#001433" d="M5.655 15.596l-.004.004L3 12.89l.985-1.006 1.67 1.707L10.75 8.4l.988 1.006v.001L5.66 15.6l-.005-.004zm9.196-2.01L20 8.4 21 9.407 14.85 15.6l-.207-.21-1.714-1.726 1-1.006.922.929zm-4.631 0L15.37 8.4l.999 1.007-6.15 6.193-.207-.21-1.714-1.726 1-1.006.922.929z"></path>
                                     </svg>
                                 </div>
-                                <div class="link-down"><span>Inbox</span></div>
+                                <div class="link-down"><span>type text</span></div>
 
                             </a>
 
@@ -232,7 +232,7 @@
                                         <path fill="#001433" d="M12 16.806l3.637 2.2a.874.874 0 0 0 1.306-.947l-.964-4.137 3.217-2.787c.587-.509.272-1.473-.5-1.534l-4.233-.36-1.657-3.909c-.298-.71-1.314-.71-1.612 0l-1.657 3.9-4.233.36c-.772.062-1.087 1.026-.5 1.534l3.217 2.787-.964 4.137a.874.874 0 0 0 1.306.947L12 16.806z"></path>
                                     </svg>
                                 </div>
-                                <div class="link-down"><span>Inbox</span></div>
+                                <div class="link-down"><span>Hired</span></div>
 
                             </a>
 

@@ -22,6 +22,7 @@
     <!-- company page -->
     <link rel="stylesheet" href="/css/company/company-profile.css">
     <link rel="stylesheet" href="/css/company/createJob/createQuestionsJob.css">
+    <link rel="stylesheet" href="/css/company/manage-application.css">
     
     
 

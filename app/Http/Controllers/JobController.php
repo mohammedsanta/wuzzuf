@@ -212,7 +212,7 @@ class JobController extends Controller
      */
     public function show(string $id)
     {
-        $job = Job::find($id);
+        $job = Job::findOrFail($id);
 
         // dd(hasSkill());
 

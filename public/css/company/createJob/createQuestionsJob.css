@@ -8,16 +8,25 @@
     width: 65%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .about-questions h3 {
-
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    margin: 0px;
 }
+
+/* Start note or screen advice */
+
+/* note */
 
 .about-questions-note {
     position: relative;
-    width: 90%;
+    width: 96%;
     border-width: 1px;
     border-style: solid;
     padding: 12px;
@@ -48,10 +57,44 @@
     bottom: 25px;
 }
 
+/* advice */
+
+.about-questions-advice {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-questions-advice-p1 {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.27px;
+    line-height: 19px;
+    color: rgb(128, 142, 165);
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.about-questions-advice-p2 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.35px;
+    line-height: 22px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 3px 0px 18px;
+}
+
+/* Start note or screen advice */
+
+
 /* Start Questions */
 
 .questions {
-    width: 94%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -79,8 +122,8 @@
 }
 
 .question-actions {
-    position: relative;
-    left: 160px;
+    position: absolute;
+    right: 15px;
     display: flex;
     gap: 1rem;
 }
@@ -96,6 +139,48 @@
     flex-direction: column;
     width: 94%;
     gap: 1rem;
+}
+
+.about-questions-add-ask-delete-ask {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    padding: 0px 12px;
+    display: none;
+    flex-direction: column;
+}
+
+.about-questions-add-ask-delete-ask-disappear {
+    display: block;
+}
+
+.about-questions-add-ask-delete-container {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 24px;
+    width: 405px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.about-questions-add-ask-delete-p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    margin: 0px 0px 13px;
+    text-align: left;
+    line-height: 24px;
+    align-self: start;
+}
+
+.about-questions-add-ask-delete-actions {
+    align-self: end;
 }
 
 /* Start preview question */
@@ -242,6 +327,7 @@
 /* End preview question */
 
 .about-questions-add-question {
+    width: 100%;
     background: rgb(247, 250, 255);
     border: 1px solid rgb(217, 221, 228);
     padding: 16px;
@@ -399,7 +485,7 @@
 /* Start Table Question */
 
 .table-questions {
-    width: 94%;
+    width: 100%;
 }
 
 .table-questions-top {
@@ -603,6 +689,22 @@
     display: flex;
     gap: 1rem;
 }
+
+.email-editor-input {
+    color: rgb(13, 41, 85);
+    background-color: rgb(250, 250, 251);
+    border: 1px solid rgb(217, 221, 228);
+    border-radius: 2px;
+    width: 45%;
+    letter-spacing: -0.47px;
+    line-height: 20px;
+    font-size: 15px;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s, border-color 0.2s ease 0s, box-shadow 0.2s ease 0s;
+    padding: 10px 8px;
+    height: 15px;
+    max-width: 360px;
+}
+
 
 .recipient-email button {
     color: rgb(0, 85, 217);

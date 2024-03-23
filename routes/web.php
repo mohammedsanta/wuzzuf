@@ -59,6 +59,9 @@ Route::get('/post/job',[CompanyController::class,'postJob'])->name('company.post
 Route::post('/post/job',[jobController::class,'store'])->name('company.storeJob');
 Route::get('/job/create/additional-info/{id}',[jobController::class,'viewcreateQuestion'])->name('job.view.create.question');
 Route::get('/post/internship',[CompanyController::class,'postInternship'])->name('company.postInternship');
+// applications
+Route::get('/company/manage-applicants',[CompanyController::class,'manageApplicationView'])->name('manage.application.view')->middleware('auth:company');
+
 
 // End Posts
 
@@ -80,7 +83,7 @@ Route::get('/jobs/careers',[CompanyController::class,'careers'])->name('company.
 Route::get('/company/users',[CompanyController::class,'users'])->name('company.users');
 Route::get('/company/subaccount',[CompanyController::class,'subAccount'])->name('company.subAccount');
 
-// 
+//
 
 Route::get('/company/profile',[CompanySettings::class,'profile'])->name('company.profile')->middleware('auth:company');
 Route::post('/company/profile',[CompanySettings::class,'companyProfile'])->name('company.profile.post')->middleware('auth:company');

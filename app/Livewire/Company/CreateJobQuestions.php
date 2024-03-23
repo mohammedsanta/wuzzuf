@@ -2,45 +2,140 @@
 
 namespace App\Livewire\Company;
 
+use App\Models\Job;
 use Livewire\Component;
 
 class CreateJobQuestions extends Component
 {
 
+    public $job;
     public $gender = 'NoPreference';
     public $EducationLevel = 'NotSpecified';
+    public $note = true;
     public $switch = true;
     public $preview = false;
+    public $changeEmail = false;
+    public $deleteQuestionAppear = false;
+    public $quesWantDelete;
+    public $editQuestionButton = false;
+    public $indexQuestion;
     
     // questions
 
     public $filter = 'All';
     public $appearAddQuestion = false;
-    public $questionsAdded = ['What makes you the ideal candidate for this position?'];
+    public $questionsAdded = [['question' => 'What makes you the ideal candidate for this position?','edit' => false]];
     public $enough = false;
+    public $theQuestion;
     
     // for validation
 
-    public $KeepCompany;
-    public $SendNotifications;
-    public $Daily;
-    public $Weekly;
+    public $CompanyConfidential = false;
+    public $SendEmail = true;
+    public $Duration = 'Daily';
+    public $AcademicExcellence = false;
+    public $Email;
+
+    public function mount()
+    {
+        $id = explode('/',parse_url(request()->url())['path'])[4];
+        $this->job = Job::find($id);
+        $this->Email = auth('company')->user()->email;
+    }
 
     public $rules = [
-        'KeepCompany' => 'sometimes',
-        'SendNotifications' => 'sometimes',
-        'Daily' => 'sometimes',
-        'Weekly' => 'sometimes',
-
+        'CompanyConfidential' => 'sometimes',
+        'SendEmail' => 'sometimes',
+        'Duration' => 'sometimes',
+        'Email' => 'sometimes'
     ];
 
     public function save()
     {
 
         $data = $this->validate();
+        $data['gender'] = $this->gender;
+        $data['EducationLevel'] = $this->EducationLevel;
+        $data['AcademicExcellence'] = $this->AcademicExcellence;
 
-        dd($data);
+        $this->job->additional()->create($data);
 
+        // Create Questions
+
+        foreach($this->questionsAdded as $num => $item) {
+
+            $this->job->question()->create([
+                'Question' => $item['question'],
+                'Type' => 'Text'
+            ]);
+
+        }
+
+        // redirect
+
+        return redirect()->route('job.show',$this->job->id);
+
+    }
+
+    public function switchAddQuestion()
+    {
+        $this->appearAddQuestion ? $this->appearAddQuestion = false : $this->appearAddQuestion = true;
+    }
+
+    public function deleteQuestionAppearSwitch($index = '')
+    {
+        $this->deleteQuestionAppear ? $this->deleteQuestionAppear = false : $this->deleteQuestionAppear = true;
+        $this->quesWantDelete = $index;
+    }
+
+    public function deleteQuestion()
+    {
+        unset($this->questionsAdded[$this->quesWantDelete]);
+        $this->deleteQuestionAppearSwitch();
+        $this->checkEnough();
+    }
+
+    public function appearEditQuestion($index)
+    {
+
+        $this->theQuestion = $this->questionsAdded[$index]['question'];
+
+        $this->questionsAdded[$index]['edit'] = true;
+
+    }
+
+    public function saveEditQuestion($index)
+    {
+        $this->questionsAdded[$index]['question'] = $this->theQuestion;
+        $this->questionsAdded[$index]['edit'] = false;
+    }
+
+    public function candelEdit($index)
+    {
+        $this->questionsAdded[$index]['edit'] = false;
+    }
+
+    public function addQuestionToTable()
+    {
+        array_push($this->questionsAdded,['question' => $this->theQuestion,'edit' => false]);
+        $this->switchAddQuestion();
+        $this->theQuestion = null;
+    }
+
+    public function editQuestionFromTable()
+    {
+        $this->questionsAdded[$this->indexQuestion] = $this->theQuestion;
+        $this->switchAddQuestion();
+    }
+
+    public function disappearNote()
+    {
+        $this->note ? $this->note = false : $this->note = true;
+    }
+
+    public function switchEmail()
+    {
+        $this->changeEmail ? $this->changeEmail = false : $this->changeEmail = true;
     }
 
     public function setFilter($data)
@@ -111,9 +206,16 @@ class CreateJobQuestions extends Component
 
     public function addQuestion($data)
     {
-        array_push($this->questionsAdded,$data);
+        array_push($this->questionsAdded,['question' => $data,'edit' => false]);
+        $this->checkEnough();
+    }
+
+    public function checkEnough()
+    {
         if(count($this->questionsAdded) == 7) {
             $this->enough = true;
+        } else {
+            $this->enough = false;
         }
     }
 
@@ -122,11 +224,6 @@ class CreateJobQuestions extends Component
     public function previewAppearing()
     {
         $this->preview ? $this->preview = false : $this->preview = true;
-    }
-
-    public function switchAddQuestion()
-    {
-        $this->appearAddQuestion ? $this->appearAddQuestion = false : $this->appearAddQuestion = true;
     }
 
     public function switchClicked()

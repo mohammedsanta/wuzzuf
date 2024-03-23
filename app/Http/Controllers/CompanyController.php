@@ -211,4 +211,12 @@ class CompanyController extends Controller
     {
         //
     }
+
+    // application
+
+    public function manageApplicationView()
+    {
+        return view('company.manage-application');
+    }
+
 }

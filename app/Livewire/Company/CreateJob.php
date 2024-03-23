@@ -148,7 +148,7 @@ class CreateJob extends Component
         //     }
         // }
 
-        return redirect("/job/create/questions/$createdJob->id");
+        return redirect("/job/create/additional-info/$createdJob->id");
     }
 
     public function OnSiteB($type)
