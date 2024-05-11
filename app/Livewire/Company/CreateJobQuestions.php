@@ -4,6 +4,7 @@ namespace App\Livewire\Company;
 
 use App\Models\Job;
 use Livewire\Component;
+use App\Models\JobQuestion;
 
 class CreateJobQuestions extends Component
 {
@@ -70,6 +71,7 @@ class CreateJobQuestions extends Component
             ]);
 
         }
+
 
         // redirect
 

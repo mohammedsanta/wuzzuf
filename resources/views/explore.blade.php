@@ -5,11 +5,11 @@
 @section('profilePicture', count(Auth::user()->profile()->get()) ? Storage::Url(Auth::user()->profile()->get()[0]->picture) : 'pic/wuzzuf.jpg' )
 @section('content')
 
-        @auth('company')
+        <!-- @auth('company')
             <div class="add-job">
-                <a href="{{ route('job.create') }}">Add Job</a>
+                <a href="route('job.create')">Add Job</a>
             </div>
-        @endauth
+        @endauth -->
 
 
         <div class="explor">
@@ -48,7 +48,19 @@
                 
                                     <div class="explor-jobs-box-job-tags">
                 
-                                        <p class="">Experienced {{$job->jobDetails->get()[0]->ExperienceNeeded}} Yrs of Exp · 
+                                        <p class="">Experienced 
+
+                                            @if(count($job->jobDetails()->get()))
+
+                                            {{$job->jobDetails->get()[0]->ExperienceNeeded}}
+
+                                            @else
+
+                                            <p style="color: red">no data on job details</p>
+
+                                            @endif
+
+                                            Years of Exp · 
 
                                             @foreach($job->skills()->get() as $skill)
 

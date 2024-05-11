@@ -11,6 +11,8 @@ class JobQuestion extends Model
     use HasFactory;
 
     protected $fillable = [
+        'jobquestion_type',
+        'jobquestion_id',
         'Question',
         'Type',
     ];

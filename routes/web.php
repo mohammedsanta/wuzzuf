@@ -38,6 +38,7 @@ Route::get('/company/create',[CompanyController::class,'create'])->name('company
 Route::post('/company/create',[CompanyController::class,'store'])->name('company.store')->middleware('guest:web,company');
 Route::post('/company/login',[CompanyController::class,'login'])->name('company.login')->middleware('guest:web,company');
 Route::post('/company/logout',[CompanyController::class,'logout'])->name('company.logout')->middleware('auth:company');
+// old i would remove
 // Route::get('/job/create',[JobController::class,'create'])->name('job.create')->middleware('auth:company');
 Route::get('/job/ourjobs',[JobController::class,'ourjobs'])->name('job.ourjobs')->middleware('auth:company');
 Route::post('/job',[JobController::class,'store'])->name('job.store')->middleware('auth:company');

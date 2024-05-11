@@ -34,14 +34,14 @@
                     <div class="no-content-buttons">
 
                         <button class="blue-button">
-                            Add New Post
+                            <a href="{{ route('company.postJob') }}" style="color: white">Add New Post</a>
                             <svg width="16" height="16" preserveAspectRatio="none" viewBox="0 0 24 24"><path fill="#ffffff" d="M6 9l6 6 6-6z"></path></svg>
                         </button>
 
                         <p>Or</p>
 
                         <button class="gray-button">
-                            View All Posts
+                            <a href="{{ route('company.postsJobs') }}" style="color: gray">View All Posts</a>
                         </button>
 
                     </div>
